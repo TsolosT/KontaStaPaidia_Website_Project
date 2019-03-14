@@ -1,0 +1,85 @@
+/* CSS Document */
+.navbar-nav
+{
+  flex-direction: row;	
+ }
+.nav-link
+{
+   padding-right: .5rem !important;
+   padding-left: .5rem !important;
+}  
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu
+{
+  left: auto !important;
+   right: 0px;
+ }
+.btn-primary
+{
+	width: 130px;
+	color:#FFEB00;
+	background-color: #29ABCC;
+	border-color: #29ABCC;
+}
+.btn-primary:hover{
+	color:#29ABCC;
+	background-color:#FFEB00;
+}
+.custom-btn:active{
+	color:#29ABCC!important;
+	background-color:#FFEB00!important;
+}
+#logo img
+{
+	width: 135px;
+	height: 75px;
+}
+#header
+{
+	background-color: #991F49;
+    width: 100%; 
+}
+#nav
+{
+	margin-right: 150px;
+	margin-top: 40px;
+}
+#nav li
+{
+ 	margin: 0 10px 0 10px;
+}
+#nav li a
+{
+	font-size:22px;
+	color:white;
+}
+#nav li a:hover
+{
+	color:#29ABCC;
+}
+#top-lan-purpose
+{
+	color:white;
+	margin-bottom: 20px;
+}
+#top-lan-purpose span:last-of-type{
+	position: fixed;
+	top: 2px;
+	right:22%;
+	margin-top: 0;
+}
+#top-lan-purpose span:first-of-type{
+	position: fixed;
+	top: 2px;
+	left:20%;
+}
+#top-lan-purpose span img{
+	width: 50px;
+}
+#top-lan-purpose span img:last-of-type{
+	width: 25px;
+}
+.navactive
+{
+	color:#29ABCC !important;
+}
