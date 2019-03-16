@@ -1,4 +1,18 @@
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans&subset=greek');
+html,body{
+	height:100%;
+	width: 100%;
+}
+a,h1,h2,h3,h4,h5,h6{
+	font-family:'Open Sans', sans-serif;
+}
+p,button,input{
+	font-family: 'Lato', sans-serif;
+}
+.carousel-caption{
+	padding: 0;
+}
 .navbar-nav
 {
   flex-direction: row;	
@@ -29,6 +43,120 @@
 	color:#29ABCC!important;
 	background-color:#FFEB00!important;
 }
+.container-fluid{
+	position: fixed;
+	top:101px;
+	left: 0;
+	width: 100%;
+	padding:0!important;
+}
+.carousel img{
+	 min-width: 100%;
+	max-height: 800px;
+}
+.carousel-control-prev-icon {
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/icons/Arrowhead-Left-01-128.png);
+}
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/icons/Arrowhead-Right-01-128.png);
+}
+.carousel-indicators li {
+  width: 25px;
+  height: 25px;
+ margin: 20px;
+ 	border-radius: 100%;
+	background-color: #991F49;
+}
+.action{
+	position: absolute;
+	top:250px;
+	margin: 0 auto;
+	background-color: #29ABCC;
+	max-height: 160px;
+	width: 300px;
+	border-radius: 16px;
+}
+.action:hover{
+	background-color: #007694;
+}
+.action button{
+	background-color:rgb(153, 31, 73); 
+	border-radius: 10px;
+	border-style: none;
+	font-weight: 600;
+	color:white;
+}
+.action button:hover{
+	color:rgb(255, 235, 0);
+	background-color: rgb(181, 65, 103);
+}
+.action button a{
+	color:white;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+.action button a:hover{
+	color:rgb(255, 235, 0);
+}
+.action-2 {
+	position: absolute;
+    margin: 0 auto;
+    top: 300px;
+    left:100px;
+	width: 200px;
+	height: 50px;
+}
+.action-2 button{
+	border-style: none;
+	width:200px;
+	height: 50px;
+	border-radius: 30px;
+	background-color: #29ABCC;
+	color:white;
+	font-weight: 500;
+	word-spacing: 4px;
+}
+.action-2 button:hover{
+	background-color: #007694;
+	color:rgb(255, 235, 0);
+}
+.action-2 button a{
+	color:white;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+.action-2 button a:hover{
+	color:rgb(255, 235, 0);
+}
+.action-3 {
+	position: absolute;
+	margin: 0 25% 0 auto;
+	top:200px;
+	right: 0;
+	width: 400px;
+	height: 200px;
+}
+.action-3 h2 {
+	color:rgb(153, 31, 73);
+	letter-spacing: 3px;
+	font-weight: 600;
+}
+.action-3 a{
+	padding-left: 100px;
+	color:rgb(153, 31, 73);
+	text-decoration: underline;
+	letter-spacing: 2px;
+	font-weight: 500px;
+}
+.action-3 a:hover{
+	color:rgb(41, 171, 204);
+}
 #logo img
 {
 	width: 135px;
@@ -38,6 +166,7 @@
 {
 	background-color: #991F49;
     width: 100%; 
+	height: 100px;
 }
 #nav
 {
@@ -69,9 +198,10 @@
 	margin-top: 0;
 }
 #top-lan-purpose span:first-of-type{
-	position: fixed;
-	top: 2px;
-	left:20%;
+    position: fixed;
+    top: 0px;
+    left: 20%;
+    color: #FFEB00;
 }
 #top-lan-purpose span img{
 	width: 50px;
@@ -83,3 +213,171 @@
 {
 	color:#29ABCC !important;
 }
+
+@media only screen 
+and (max-width : 1025px)  
+{
+	#nav li a{
+		font-size: 18px!important;
+	}
+		#logo img{
+			width: 115px;
+			height: 55px;
+			position: fixed;
+			top: 20px;
+			left:40px;
+		}
+}
+@media only screen 
+	and (max-width : 991px) 
+{
+	
+		#header{
+			height: 120px;
+		}
+		#top-lan-purpose span img:last-of-type{
+			width: 30px;
+			height: 30px;
+		}
+	#top-lan-purpose span img:first-of-type{
+			width: 45px;
+			height: 45px;
+		}
+	#top-lan-purpose span:last-of-type
+	{
+		position: fixed;
+		top: 10px;
+		right:15%;
+		font-size: 16px;
+	}
+	#top-lan-purpose span:first-of-type
+	{
+		position: fixed;
+		top: 10px;
+		left:15%;
+		font-size: 14px;
+	}
+	#logo img{
+			width: 115px;
+			height: 55px;
+			position: fixed;
+			top: 40px;
+			left:40px;
+		}
+	.action{
+	position: absolute;
+	top:150px;
+	margin: 0 auto;
+	background-color: #29ABCC;
+	max-height: 120px;
+	width: 200px;
+	border-radius: 16px;
+		
+	}
+	.action h2{
+		font-size: 14px;
+	}
+	.action-2{
+	position: absolute;
+	top:140px;
+	}
+	.action-3{
+		margin: 0 0 0 auto;
+	}
+}
+@media only screen 
+	and (max-width : 671px) 
+{
+	.action { 
+		width: 150px;
+		height: 88px;
+		top:60px;
+	}
+	.action h2 { 
+		font-size: 12px;
+	}
+	.action button{
+		font-size: 12px;
+	}
+	}
+
+@media only screen 
+	and (max-width : 506px) 
+{
+		#logo img{
+			width: 115px;
+			height: 55px;
+			position: fixed;
+			top: 40px;
+			left:40px;
+		}
+		#top-lan-purpose span img:last-of-type{
+			width: 20px;
+			height: 20px;
+		}
+	#top-lan-purpose span img:first-of-type{
+			width: 35px;
+			height: 35px;
+		}
+	#top-lan-purpose span:last-of-type
+	{
+		position: fixed;
+		top: 5px;
+		right:10%;
+		font-size: 14px;
+	}
+	#top-lan-purpose span:first-of-type
+	{
+		position: fixed;
+		top: 10px;
+		left:1.5%;
+		font-size: 14px;
+	}
+	.action-3{
+		top:80px;
+	}
+	.action-3 h2{
+		font-size: 14px;
+	}
+	.action-3 a{
+		font-size: 12px;
+	}
+	.navbar-toggler{
+		position: fixed;
+		top: 58px;
+		right:10%;
+	}
+	.container-fluid{
+	position: fixed;
+	top:120px;
+	}
+}
+@media only screen 
+	and (max-width : 680px)  {
+		.action-2{
+			top:80px;
+		}
+		.action-2 button{
+			width: 150px;
+			height: 30px;
+			
+		}
+		.action-2 button a{
+			font-size: 14px;
+		}
+		.carousel-indicators  li{
+			width: 15px;
+			height: 15px;
+		}
+		.action-3 h2{
+			font-size: 18px;
+		}
+		.action-3 a{
+			font-size:16px;
+		}
+		.action-3{
+			top:80px;
+		}
+		
+}
+
