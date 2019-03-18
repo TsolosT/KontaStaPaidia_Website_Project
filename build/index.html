@@ -3,104 +3,224 @@
 <head>
 <meta charset="utf-8">
 <title>Home - An Organization for helping kids with cancer</title>
+	<!--Website Icon-->
 	<link rel="icon" type="image/ico" href="assets/images/icons/logo_icon.png" >
+	<!-- Styles -->
 	<link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	 <!-- Custom Style-->
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<!-- start header-->
-	<nav id="header" class="navbar navbar-expand-lg  fixed-top navbar-light">
-	<div id="top-lan-purpose">
-		<span>Created for educational purposes</span>
-	 	<span><img src="assets/images/icons/Globe-128.png" alt="lang icon"> English <img src="assets/images/icons/Arrowhead-Down-128.png" alt="dropdown arrow"></span>
-	</div>
-		<a class="navbar-brand ml-5"  id="logo" href="index.html">
-		<img src="assets/images/logo_desktop.png" alt="Κοντά στο παιδί">
-		</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul id="nav" class="navbar-nav ml-auto ">
-		  <li class="nav-item">
-			<a class="nav-link navactive" href="index.html">Home</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="events.html">Events</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="about.html">About Us</a>
-		  </li>
-			 <li class="nav-item">
-			<a class="nav-link" href="contact.html">Contact Us</a>
-		  </li>
-			 <li class="nav-item">
-			<a class="nav-link" href="donate.html">
-				<button type="button" class="btn btn-primary custom-btn">Donate</button></a>
-		  </li>
-		</ul>
-	  </div> 
-</nav>
-	<!-- end header-->
-	<div class="container-fluid">
-			<div id="carouselFull" class="carousel slide" data-ride="carousel">
-			   <ol class="carousel-indicators">
-				   <li data-target="#carouselFull" data-slide-to="0" class="active"></li>
-				   <li data-target="#carouselFull" data-slide-to="1"></li>
-				   <li data-target="#carouselFull" data-slide-to="2"></li>
-			   </ol>
-			   <div class="carousel-inner">
-				   <div class="carousel-item active">
-					   <picture  class="d-block">
-						  <source media="(min-width:1300px)" srcset="assets/images/slider_3.jpg">
-						   <source media="(min-width:701px)" srcset="assets/images/slider_medium_3.jpg">
-						  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_3.jpg">
-						  <img src="assets/images/slider_3.jpg" alt="First slide" style="width:auto;">
-						</picture>
-					   <div class="carousel-caption d-md-block action">
-							<h2>Help a child by making a donation</h2>
-						   	<button><a href="donate.html">Make Now</a></button>
-					   </div>
-				   </div>
-				   <div class="carousel-item  ">
-					   <picture  class="d-block">
-						  <source media="(min-width:1300px)" srcset="assets/images/slider_2.jpg">
-						   <source media="(min-width:701px)" srcset="assets/images/slider_medium_2.jpg">
-						  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_2.jpg">
-						  <img src="assets/images/slider_2.jpg" alt="Second slide" style="width:auto;">
-						</picture>
-					   <div class="carousel-caption d-md-block action-2">
-								<button><a href="contact.html">Became a volunteer</a></button>
-					   </div>
-				   </div>
-				   <div class="carousel-item  ">
-					    <picture  class="d-block">
-						  <source media="(min-width:991px)" srcset="assets/images/slider_1.jpg">
-						   <source media="(min-width:601px)" srcset="assets/images/slider_medium_1.jpg">
-						  <source media="(max-width: 600px)" srcset="assets/images/slider_mobile_1.jpg">
-						  <img src="assets/images/slider_1.jpg" alt="Third slide" style="width:auto;">
-						</picture>
-					   <div class="carousel-caption d-md-block action-3">
-								<h2>ChildHood Cancer</h2>
-						   		<a href="#">Learn more </a>				   		
-					   </div>
-				   </div>
-			   </div>
-			   <a class="carousel-control-prev" href="#carouselFull" role="button" data-slide="prev">
-				   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				   <span class="sr-only">Previous</span>
-			   </a>
-			   <a class="carousel-control-next" href="#carouselFull" role="button" data-slide="next">
-				   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				   <span class="sr-only">Next</span>
-			   </a>
-			</div>
-	</div>
+	<!-- Header-->
+<nav id="header" class="navbar navbar-expand-lg  fixed-top navbar-light d-flex flex-row justify-content-around ">
 	
-	<!--scripts -->
+	
+	<!-- First line -->	
+	<div id="top-first-line" class="d-flex flex-row align-items-center justify-content-around ">
+		<div class="purpose-info p-0 ml-sm-5 ml-xs-1 ">Created for educational purposes</div>
+	 	<div class="lang-changer pr-xs-0  mr-xs-0 mr-sm-5 ">
+			<img src="assets/images/icons/Globe-128.png" alt="lang icon"> 
+				<strong>English </strong>
+			<img src="assets/images/icons/Arrowhead-Down-128.png" alt="dropdown arrow">
+		</div>
+	</div>
+		<!-- Second line -->
+	<div id="top-second-line" class="row">
+		 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4  d-flex flex-row justify-content-around align-items-center">
+				<div class="ml-xl-5 ml-md-2 ml-xs-0 mb-md-3 mb-sm-2 ">
+						<a class="navbar-brand ml-5"   href="index.html">
+							<img id="logo" src="assets/images/logo_desktop.png" alt="Κοντά στο παιδί">
+						</a>
+					</div>
+					<div>
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						 </button>
+				</div> 
+		</div>
+					
+	
+		  <div class="col-lg-8 collapse navbar-collapse" id="navbarSupportedContent">
+			<ul id="nav" class="navbar-nav ml-auto">
+			  <li class="nav-item">
+				<a class="nav-link active" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="events.html">Events</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="about.html">About Us</a>
+			  </li>
+				 <li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact Us</a>
+			  </li>
+				 <li class="nav-item">
+						<button type="button" class="btn btn-primary donate-btn-nav p-0 mr-5">
+							<a class="nav-link" href="donate.html">Donate  </a>
+					 </button>
+			  </li>
+			</ul>
+		  </div>
+		</div>	
+</nav>
+	
+	<div class="container-fluid">
+		<!-- Hero-->
+			<div id="carouselFull" class="carousel slide" data-ride="carousel">
+				
+				 <!-- Indicators-->  
+				 <ol class="carousel-indicators">
+					   <li data-target="#carouselFull" data-slide-to="0" class="active"></li>
+					   <li data-target="#carouselFull" data-slide-to="1"></li>
+					   <li data-target="#carouselFull" data-slide-to="2"></li>
+				   </ol>
+					<!-- Items -->
+				   <div class="carousel-inner">
+					   <div class="carousel-item active">
+						   <picture  class="d-block img-fluid">
+							  <source media="(min-width:1300px)" srcset="assets/images/slider_3.jpg">
+							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_3.jpg">
+							  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_3.jpg">
+							  <img src="assets/images/slider_3.jpg" alt="First slide" style="width:auto;">
+							</picture>
+						   <div class="carousel-caption d-md-block action-slide-1">
+								<h2>Help a child by making a donation</h2>
+								<button class="btn action-btn-primary"><a href="donate.html">Make Now</a></button>
+						   </div>
+					   </div>
+					   <div class="carousel-item  ">
+						   <picture  class="d-block img-fluid">
+							  <source media="(min-width:1300px)" srcset="assets/images/slider_2.jpg">
+							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_2.jpg">
+							  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_2.jpg">
+							  <img src="assets/images/slider_2.jpg" alt="Second slide" style="width:auto;">
+							</picture>
+						   <div class="carousel-caption d-md-block action-slide-2 d-flex flex-column justify-content-end align-content-end" >
+									<button class="btn action-btn-secondary"><a href="contact.html">Became a volunteer</a></button>
+						   </div>
+					   </div>
+					   <div class="carousel-item  ">
+							<picture  class="d-block img-fluid">
+							  <source media="(min-width:991px)" srcset="assets/images/slider_1.jpg">
+							   <source media="(min-width:601px)" srcset="assets/images/slider_medium_1.jpg">
+							  <source media="(max-width: 600px)" srcset="assets/images/slider_mobile_1.jpg">
+							  <img src="assets/images/slider_1.jpg" alt="Third slide" style="width:auto;">
+							</picture>
+						   <div class="carousel-caption d-md-block action-slide-3">
+									<h2>ChildHood Cancer</h2>
+									<a href="#">Learn more <i class="fa fa-arrow-right"></i></a>				   		
+						   </div>
+					   </div>
+				   </div>
+				 <!--Control-->
+				   <a class="carousel-control-prev" href="#carouselFull" role="button" data-slide="prev">
+					   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					   <span class="sr-only">Previous</span>
+				   </a>
+				   <a class="carousel-control-next" href="#carouselFull" role="button" data-slide="next">
+					   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					   <span class="sr-only">Next</span>
+				   </a>
+			</div>
+			<!--Section : Some work-->
+			<div class="container some-work">
+				<div class="d-flex flex-row align-content-center justify-content-center ">
+					<h1>Some of our Work</h1>
+				</div>
+				<div class="d-flex flex-sm-row flex-column justify-content-around  ">				
+					<div class="card work-1 mb-5 mr-auto ml-auto " style="width: 14rem;">
+					  <img src="assets/images/shelter_work_1.png" class="card-img-top" alt="shelter work">
+					  <div class="card-body ">
+						<a href="#" class="card-a">Provision of Shelter</a>
+					  </div>
+					</div>
+					<div class="card work-2 mb-5 mr-auto ml-auto  ml-sm-3" style="width: 14rem;">
+					  <img src="assets/images/medical_work_2.png" class="card-img-top" alt="Medical care">
+					  <div class="card-body">
+						<a href="#" class="card-a">Medical Care</a>
+					  </div>
+					</div>
+					<div class="card work-3 mb-5 mr-auto ml-auto  ml-sm-3" style="width: 14rem;">
+					  <img src="assets/images/care_work_3.png" class="card-img-top" alt="Psychological support">
+					  <div class="card-body">
+						<a href="#" class="card-a">Psychological Support</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<!--Section Some words about us-->
+			<div class="container-fluid short-about">
+				<div class="short-about-opacity">
+					<div id="about-text-container" class="d-flex flex-column align-content-center justify-content-center">
+						<div>
+							<h1>Some words about us</h1>
+						</div>
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatem error nulla reprehenderit ullam. Impedit vel eaque doloremmodi!Pariatur debitis placeat quis tenetur illum expedita praesentium, voluptas cupiditate. Fugiat.
+							Sequi aliquid quidem assumenda cupiditate odio, debitis sed fugit, maxime quisquam quibusdam dolores dolorem asperiores consequuntur consectetur suscipit esse optio praesentium non explicabo molestias sint maiores quaerat. Dolorum culpa, minima.
+							Obcaecati cum ex, ad delectus dolores distinctio ea doloremque officia?s.</p>
+							<p>Earum, praesentium! Natus eos, veritatis nostrum hic vitae tempora incidunt consequuntur ratione repellendus! Eius perspiciatis harum excepturi numquam deserunt aliquid fuga quaerat labore fugit sequi! Non possimus, ab assumenda recusandae.</p>
+						</div>
+						<div><a href="about.html" class="btn action-btn-primary">See more <i class="fa fa-arrow-right"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Upcoming Events -->
+		 	<div class="container events">
+				
+		 		<div class="row justify-content-between ">
+					<div id="event-h1" class="col-12 ml-auto mr-auto mb-5">
+						<h1>Upcoming Events</h1>
+					</div>
+						<div class="col-md-5 col-sm-10 mb-5 mr-auto ml-auto" id="event-1">
+							<a href="#" class="btn action-btn-primary event-see-more">See More</a>
+						</div>
+						<div class="col-md-5 col-sm-10 col-xs-8 mb-5 mr-auto ml-auto" id="event-2">
+							<a href="#" class="btn action-btn-primary  event-see-more">See More</a>
+						</div>
+		 			
+		 		</div>
+		 	</div>
+			<!--News -->
+			
+			<!--Sponsors-->
+		
+			<!--footer-->
+			<footer class="site-footer">
+				<div class="row justify-content-around">
+					<div class="col-4">
+						<h2>Site Map</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="donate.html">Donate</a></li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<h3>Find us on</h3>
+						<span>1</span>
+						<span>1</span>
+						<span>1</span>
+					</div>
+					<div class="col-4">
+						<button>top</button>
+					</div>
+				</div>
+				<div class="row align-content-center">
+					<div class="col-12">
+						<h4>Copyrights blah blah</h4>
+					</div>
+				</div>
+			</footer>
+	</div>
+
+	<!--Custom Scripts -->
+	<script src="assets/js/app.js"></script>
+	<!--Plugins Scripts-->
 	<script src="assets/plugins/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/plugins/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/app.js"></script>
 </body>
 </html>

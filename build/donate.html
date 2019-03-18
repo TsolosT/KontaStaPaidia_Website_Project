@@ -3,49 +3,65 @@
 <head>
 <meta charset="utf-8">
 <title>Make A Donation</title>
+<!--Website Icon-->
 	<link rel="icon" type="image/ico" href="assets/images/icons/logo_icon.png" >
+	<!-- Styles -->
 	<link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+	 <!-- Custom Style-->
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<nav id="header" class="navbar navbar-expand-lg fixed-top navbar-light">
-	<div id="top-lan-purpose">
-		<span>Created for educational purposes</span>
-	 	<span><img src="assets/images/icons/Globe-128.png" alt="lang icon"> English <img src="assets/images/icons/Arrowhead-Down-128.png" alt="dropdown arrow"></span>
+	<!-- Header-->
+<nav id="header" class="navbar navbar-expand-lg  fixed-top navbar-light d-flex flex-row justify-content-around ">
+	<!-- First line -->	
+	<div id="top-first-line" class="d-flex flex-row align-items-center justify-content-around ">
+		<div class="purpose-info p-0 ml-sm-5 ml-xs-1 ">Created for educational purposes</div>
+	 	<div class="lang-changer pr-xs-0  mr-xs-0 mr-sm-5 ">
+			<img src="assets/images/icons/Globe-128.png" alt="lang icon"> 
+				<strong>English </strong>
+			<img src="assets/images/icons/Arrowhead-Down-128.png" alt="dropdown arrow">
+		</div>
 	</div>
-		<a class="navbar-brand ml-5"  id="logo" href="index.html">
-		<img src="assets/images/logo_desktop.png" alt="Κοντά στο παιδί">
-		</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul id="nav" class="navbar-nav ml-auto ">
-		  <li class="nav-item">
-			<a class="nav-link " href="index.html">Home</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link " href="events.html">Events</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="about.html">About Us</a>
-		  </li>
-			 <li class="nav-item">
-			<a class="nav-link" href="contact.html">Contact Us</a>
-		  </li>
-			 <li class="nav-item">
-			<a class="nav-link" href="donate.html">
-				<button type="button" class="btn btn-primary custom-btn">Donate</button></a>
-		  </li>
-		</ul>
-	  </div> 
+		<!-- Second line -->
+		<div id="top-second-line" class="d-flex flex-row justify-content-around align-items-center">
+				<div class="ml-xl-5 ml-md-2 ml-xs-0 mb-md-3 mb-sm-2 ">
+					<a class="navbar-brand ml-5"   href="index.html">
+						<img id="logo" src="assets/images/logo_desktop.png" alt="Κοντά στο παιδί">
+					</a>
+				</div>
+				<div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					 </button>
+				</div>  
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul id="nav" class="navbar-nav ml-auto ">
+			  <li class="nav-item">
+				<a class="nav-link " href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="events.html">Events</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="about.html">About Us</a>
+			  </li>
+				 <li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact Us</a>
+			  </li>
+				 <li class="nav-item">
+						<button type="button" class="btn btn-primary donate-btn-nav p-0 mr-5">
+							<a class="nav-link" href="donate.html">Donate  </a>
+					 </button>
+			  </li>
+			</ul>
+		  </div>
+		</div>	
 </nav>
-	
-	<!--scripts -->
+
+	<!--Custom Scripts -->
+	<script src="assets/js/app.js"></script>
+	<!--Plugins Scripts -->
 	<script src="assets/plugins/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/plugins/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/app.js"></script>
-<body>
 </body>
 </html>
