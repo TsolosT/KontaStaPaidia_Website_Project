@@ -8,8 +8,8 @@
   <h4>Only Front-End was developed</h4>
        <ul> 
               Stack that i used:
-              <li>HTML<li>
-              <li>JS<li>
-              <li>Bootstrap 4<li>
+              <li>HTML</li>
+              <li>JS</li>
+              <li>Bootstrap 4</li>
        </ul>
        
