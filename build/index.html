@@ -183,44 +183,132 @@
 		 		</div>
 		 	</div>
 			<!--News -->
-			
+			<div class="container news-box justify-content-around">
+				
+				<div id="news-h1" class="col-12 mx-auto mb-5">
+						<h1>Recent Events</h1>
+					</div>
+				<!--posts-->
+				<div class="row news-post-box carousel slide" data-type="multi" id="carousel-post" data-ride="carousel"  data-pause="hover">
+					   <div id="posts" class="carousel-inner col-8 w-100 mx-auto" role="listbox"> 
+								<div  class="card carousel-item active " style="width: 12rem;">
+								  <img src="assets/images/post_img.png" class="card-img-top" alt="...">
+								  <div class="card-body">
+									<a href="#" class="btn action-btn-primary">Read More</a>
+								  </div>
+								</div>
+						   
+								<div  class="card carousel-item" style="width: 12rem;">
+								  <img src="assets/images/post_img_2.png" class="card-img-top" alt="...">
+								  <div class="card-body">
+									<a href="#" class="btn action-btn-primary">Read More</a>
+								  </div>
+								</div>
+						   
+								<div class="card carousel-item " style="width: 12rem;">
+								  <img src="assets/images/post_img.png" class="card-img-top" alt="...">
+								  <div class="card-body">
+									<a href="#" class="btn action-btn-primary">Read More</a>
+								  </div>
+								</div>
+						   
+								<div class="card carousel-item" style="width: 12rem;">
+								  <img src="assets/images/post_img_2.png" class="card-img-top" alt="...">
+								  <div class="card-body">
+									  <a href="#" class="btn action-btn-primary">Read More</a>
+									</div>
+								 </div>	
+						  	
+						    <div class="card carousel-item " style="width: 12rem;">
+								  <img src="assets/images/post_img.png" class="card-img-top" alt="...">
+								  <div class="card-body">
+									<a href="#" class="btn action-btn-primary">Read More</a>
+								  </div>
+								</div>
+						   
+								<div class="card  carousel-item" style="width: 12rem;">
+								  <img src="assets/images/post_img_2.png" class="card-img-top" alt="...">
+								  <div class="card-body">
+									  <a href="#" class="btn action-btn-primary">Read More</a>
+									</div>
+								 </div>	
+						</div>
+						<a class="carousel-control-prev" href="#carousel-post" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carousel-post" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>						
+						</a>
+					</div>
+				
+				</div>
+				
+				
 			<!--Sponsors-->
-		
+			<div class="row container-fluid spons-boxs justify-content-center">
+					<div class="spons-title col-12 mr-auto ml-auto mb-5">
+						<h2>Our Sponsors</h2>
+					</div>
+					
+					<div class="spons-imgs">
+						<span class="col-md-4  col-sm-6 mr-auto ml-auto">
+							<img src="assets/images/sponsors_1.png" alt="Sponsor 1">
+							<img src="assets/images/sponsors_2.jpg" alt="Sponsor 2">
+						</span>
+						<span class="col-md-4 col-sm-6 mr-auto ml-auto">
+							<img src="assets/images/sponsors_3.jpg" alt="Sponsor 3">
+							<img src="assets/images/sponsors_4.png" alt="Sponsor 4">
+						</span>
+					</div>
+
+				</div>
 			<!--footer-->
 			<footer class="site-footer">
-				<div class="row justify-content-around">
-					<div class="col-4">
-						<h2>Site Map</h2>
+				<div class="row justify-content-around ">
+					<div class="col-md-3 col-sm-8 ml-3 sitemap">
+						<h3>Site Map</h3>
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="events.html">Events</a></li>
 							<li><a href="about.html">About Us</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
 							<li><a href="donate.html">Donate</a></li>
+						
 						</ul>
 					</div>
-					<div class="col-4">
-						<h3>Find us on</h3>
-						<span>1</span>
-						<span>1</span>
-						<span>1</span>
+					<div class="col-md-3 col-sm-8  ml-1 mr-0 mt-auto mb-auto social-media">
+							<h5>Find us on</h5>					
+						 <span>
+							 <a href="https://www.facebook.com/" target="_blank" id="facebook-icon"></a>
+							<a href="https://twitter.com/"  target="_blank" id="twitter-icon"> </a>
+							<a href="https://www.instagram.com/" target="_blank" id="instagram-icon"> </a>
+						</span>	
+							
+						
 					</div>
-					<div class="col-4">
-						<button>top</button>
+					<div class="col-md-1 col-sm-8  mb-sm-3 mr-0 mt-5  ">
+						<button id="go-top-btn" title="Go To Top"><img src="assets/images/icons/go_top.png" alt="Go Top"></button>
 					</div>
 				</div>
-				<div class="row align-content-center">
-					<div class="col-12">
-						<h4>Copyrights blah blah</h4>
+				<div class="row align-content-center ">
+					<div class="col-12 mr-auto ml-auto">
+						<h5>Copyrights &copy; 
+							<script type="text/javascript">
+							document.write("2006 - "+ new Date().getFullYear());
+							</script> 
+							. Konta sta Paidia</h5>
 					</div>
 				</div>
 			</footer>
 	</div>
 
-	<!--Custom Scripts -->
-	<script src="assets/js/app.js"></script>
+	
 	<!--Plugins Scripts-->
 	<script src="assets/plugins/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/plugins/js/bootstrap.bundle.min.js"></script>
+	<!--Custom Scripts -->
+	<script src="assets/js/app.js"></script>
 </body>
 </html>

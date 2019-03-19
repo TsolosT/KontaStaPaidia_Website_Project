@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans&subset=greek');
 /*Default */
 html,body{
-	height:100%;
 	width: 100%;
 }
 a,h1,h2,h3,h4,h5,h6{
@@ -41,7 +40,8 @@ p,button,input{
   width: 100px;
   background-image: url(../images/icons/Arrowhead-Right-01-128.png);
 }
-.carousel-indicators li {
+.carousel-indicators li 
+{
   	width: 25px;
  	 height: 25px;
  	margin: 20px;
@@ -58,6 +58,17 @@ p,button,input{
 	top:12%;
 	bottom: auto;
 }
+.news-post-box .carousel-control-prev-icon {
+  height: 100px;
+  width: 100px;
+  background-image: url("../images/icons/Prev-128-hover.png");
+}
+.news-post-box .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: url("../images/icons/Next-128-hover.png");
+}
+
 .btn-primary
 {
 	width: 130px;
@@ -79,7 +90,31 @@ p,button,input{
 		height: 15px!important;
 	}
 }
+ @media (min-width: 1200px) {
 
+            /* show 3 items */
+            div.card.carousel-item.active,
+	 		div.card.carousel-item.active+div.card.carousel-item,
+			div.card.carousel-item.active+div.card.carousel-item+div.card.carousel-item
+            {
+                display: block;
+				margin-right: 20px!important;
+            }
+        }
+ @media (min-width: 768px) 
+ {
+
+            /* show 3 items */
+            div.card.carousel-item.active,
+	 		div.card.carousel-item.active+div.card.carousel-item
+            {
+                display: block;
+				margin-right: 20px!important;
+            }
+			div.card.carousel-item.active.left { left: -25%; }
+			div.card.carousel-item .next        { left:  25%; }
+			div.card.carousel-item .prev		 { left: -25%; }
+			}
 /*Custom Css*/
 
 /*HEADER */
@@ -347,21 +382,180 @@ p,button,input{
 	margin:240px 0 10px 240px;	
 }
 /*posts news*/
+#news-h1
+{
+	letter-spacing: 3px;
+	border-bottom:1px solid #29abcc;
+	padding: 0 5px;
+	color:#29abcc;
+}
+.news-post-box {
+	margin: 0 auto;
+}
+.news-post-box > div
+{
+	margin-left: 15px;
+}
+.news-post-box .card:hover
+{
+	border:1px solid #991f49;
+}
+.news-post-box .card .card-body
+{
+	margin: 0 auto;
+}
+#posts{
+	    padding-left: 60px;
 
+}
+#prev-img
+{
+	background-image: url(../images/icons/Prev-128-hover.png);
+	width: 100px;
+	height:100%;
+}
+#prev-img:hover
+{
+	background-image: url(../images/icons/Prev-128.png);
+}
 /*sponsors*/
-
+.spons-boxs
+{
+	width: 100%;
+	background-color: #29abcc;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.spons-title
+{
+	color:white;
+	letter-spacing: 3px;
+}
+.spons-imgs img
+{
+	width: 200px;
+	margin-right: 40px;
+	margin-top: 10px;
+}
 /*footer*/
 .site-footer
-{
+{	
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
-	height: 100%;
-	
 	color:white;
 	background-color: #991f49;
 }
-
+.sitemap
+{
+    padding: 5px;
+	
+}
+.sitemap h3
+{	text-align: center;
+	max-width: 150px;
+	border-bottom: 1px solid white;
+	padding-right: 2px;
+	padding-left: 2px;
+	padding-bottom: 5px;
+	margin: 0 auto 10px 30px;
+}
+.sitemap ul{
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 0!important;
+}
+.sitemap ul li
+{
+	float: left; 
+	list-style: outside none none;
+	width: 50%;
+	margin-bottom: 5px;
+}
+.sitemap ul li a
+{
+	padding-bottom: 5px;
+	color:white;
+	font-size: 16px;
+	
+}
+.sitemap ul li a:hover{
+	color:#29abcc;
+}
+.social-media h5{
+	display: inline-block;
+	margin-right: 30px;
+}
+.social-media a
+{
+	margin-bottom: -15px;
+	margin-right: 5px;
+}
+#instagram-icon
+{
+	display: inline-block;
+    width: 41px;
+    height: 48px;
+    background-repeat: no-repeat;
+	background-image: url(../images/icons/insta_white.png);
+	background-position: center;
+	background-size: contain;
+}
+#instagram-icon:hover
+{
+	background-image: url(../images/icons/insta_color_2.png);
+	width: 41px;
+    height: 48px;
+	background-size: contain;
+}
+#facebook-icon
+{	
+	display: inline-block;
+    width: 41px;
+    height: 48px;
+    background-repeat: no-repeat;
+	background-image: url(../images/icons/facebook_white.png);
+	background-position: center;
+	background-size: contain;
+}
+#facebook-icon:hover
+{
+	background-image: url(../images/icons/facebook_color.png);
+}
+#twitter-icon
+{
+	display: inline-block;
+    width: 41px;
+    height: 48px;
+    background-repeat: no-repeat;
+	background-image: url(../images/icons/twitter_white.png);
+	background-position: center;
+	background-size: contain;
+}
+#twitter-icon:hover
+{
+	background-image: url(../images/icons/twitter_color.png);
+}
+#go-top-btn
+{
+	outline: none;
+    background: none;
+    border: none;
+    transition: 0.6s;
+    overflow: hidden;
+}
+#go-top-btn:hover {
+	  transition: 0.70s;
+	  -webkit-transition: 0.70s;
+	  -moz-transition: 0.70s;
+	  -ms-transition: 0.70s;
+	  -o-transition: 0.70s;
+	  -webkit-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg);
+	  transform: rotate(360deg);
+}
 /*Media*/
 @media (max-width: 376px){
 	.action-btn-secondary
@@ -445,6 +639,9 @@ p,button,input{
 		margin-right: 20px!important;
 		margin-left: 20px!important;
 	}
+		.spons-imgs {
+		margin-left: 22%!important;
+	}
 }
 @media (max-width: 680px)
 {
@@ -469,12 +666,40 @@ p,button,input{
 	}
 }
 @media (max-width: 788px)
-{
+{	/*header*/
+	#nav li button{
+		margin-left: auto!important;
+		margin-right: auto!important;
+	}
+	/*hero*/
 	.action-btn-secondary
 	{
 		padding: 8px!important;
 	}
-	
+	.sitemap 
+	{
+		margin-left: 33%!important;
+		margin-right: auto!important;
+	}
+	.social-media
+	{
+ 
+		margin-left: 33%!important;
+		margin-right: auto!important;
+	}
+	#go-top-btn
+	{
+		margin-left: 38%!important;
+		margin-right: auto!important;
+	}
+	.spons-imgs  img
+	{
+		width: 120px;
+	}
+	.spons-imgs 
+	{
+		margin-left: 15%!important;
+	}
 }
 @media (max-width: 1008px)
 { /*header*/
@@ -506,6 +731,28 @@ p,button,input{
 	{
 		height: auto;
 	}
+	/*footer*/
+	#go-top-btn img
+	{
+		    width: 62px;
+   		 height: 62px;
+	}
+	.social-media span
+	{
+		display: block;
+	}
+	.social-media h5 {
+		margin-right: 15px;
+	}
+	/*sponsors*/
+	.spons-imgs img
+	{
+		width: 120px;
+		margin-right: 20px;
+		margin-top: 10px;
+		
+	}
+
 }
 
 @media (max-width: 1300px)
@@ -523,6 +770,10 @@ p,button,input{
 	{
 		margin:210px 0 10px 190px;	
 	}
+	
+	.social-media a 
+	{
+		width: 32px !important;
+		height: 38px !important;
+	}
 }
-
-
