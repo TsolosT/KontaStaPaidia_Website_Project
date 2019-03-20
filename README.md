@@ -9,7 +9,7 @@
        <ul> 
               Stack that i used:
               <li>HTML</li>
-              <li>JS</li>
+              <li>JS,Jquery</li>
               <li>Bootstrap 4</li>
        </ul>
        
