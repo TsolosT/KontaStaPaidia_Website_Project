@@ -43,7 +43,7 @@
 		  <div class="col-lg-8 collapse navbar-collapse" id="navbarSupportedContent">
 			<ul id="nav" class="navbar-nav ml-auto">
 			  <li class="nav-item">
-				<a class="nav-link active" href="index.html">Home</a>
+				<a class="nav-link " href="index.html">Home</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="events.html">Events</a>
@@ -52,7 +52,7 @@
 				<a class="nav-link" href="about.html">About Us</a>
 			  </li>
 				 <li class="nav-item">
-				<a class="nav-link" href="contact.html">Contact Us</a>
+				<a class="nav-link active" href="contact.html">Contact Us</a>
 			  </li>
 				 <li class="nav-item">
 						<button type="button" class="btn btn-primary donate-btn-nav p-0 mr-5">
@@ -64,7 +64,48 @@
 		</div>	
 </nav>
 	<div class="container-fluid">
-	<div style="width:600px;height:600px;"></div>
+	<!--Contact info-map section-->
+	<div class="container contact-section">
+		<div class="row">
+			<h1 class="mx-auto mt-2  px-5 ">Contact Us</h1>
+		</div>
+		<div class="row mb-5">
+			<div class="col-sm-6 col-xs-12">
+			 <h3>Contact Information</h3>
+				<p><strong>Email:</strong> info@kontastapaidia.org</p>
+				<p><strong>Phone:</strong> +30 24120 12313</p>
+				<p><strong>Address:</strong> Suntagma 15, Athens, Greece</p>
+			</div>
+			<div id="map" class="col-sm-6 col-xs-10 "></div>
+		</div>
+	</div>
+	<!--message form section-->
+	<div class="container message-form mb-5 p-5">
+		<div class="row mb-5">
+			<h2 class="mx-auto mt-2">Message Us</h2>
+		</div>
+		<form>
+			<div class="row">		
+				<div class="col-md-6 col-xs-12">
+					<div class="form-group mx-5">
+						<input type="text" class="form-control input-mail" aria-describedby="nameHelp" placeholder="Enter your name">
+					 </div>
+					<div class="form-group mx-5">
+						<input type="email" class="form-control input-mail" aria-describedby="emailHelp" placeholder="Enter your email">
+						<small id="emailHelp" class="form-text  text-light">We'll never share your email with anyone else.</small>
+					 </div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					  <div class="form-group">
+						<textarea class="form-control input-mail"  placeholder="Enter your message..." rows="8"></textarea>
+					  </div>
+				</div>
+				<div class="col-md-6 col-xs-12 mt-3 mx-auto">
+					<button type="submit" class="btn action-btn-primary px-5">Send</button>
+				</div>
+			</div>
+		</form>
+	</div>	
 <!--footer-->
 			<footer class="site-footer">
 				<div class="row justify-content-around ">
@@ -110,6 +151,9 @@
 	<!--Plugins Scripts-->
 	<script src="assets/plugins/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/plugins/js/bootstrap.bundle.min.js"></script>
+	 <script async defer
+   	 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-nofBO3LMm4CP7YrJ2lgNcQe2Es4nJAQ&callback=initMap">
+    </script>
 	<!--Custom Scripts -->
 	<script src="assets/js/app.js"></script>	
 	

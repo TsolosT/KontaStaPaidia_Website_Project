@@ -471,6 +471,44 @@ p,button,input{
 {
 	border:1px solid  #991f49;
 }
+/*Contact section*/
+.contact-section
+{
+	margin-top: 240px;
+}
+.contact-section h1
+{
+	border-bottom: 1px solid black;
+	letter-spacing: 3px;
+	margin-bottom: 40px;
+}
+.contact-section h3 
+{
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+.contact-section p 
+{
+	margin-left: 20px;
+}
+#map 
+{
+        height: 400px; 
+        width: 100%;  
+}
+.message-form
+{
+	background-color: #29abcc;
+}
+.message-form  h2
+{
+	color:white;
+}
+
+.input-mail:hover,.input-mail:focus
+{
+	border: 1px solid #991f49;;
+}
 /*footer*/
 .site-footer
 {	
@@ -676,6 +714,13 @@ p,button,input{
 		.spons-imgs {
 		margin-left: 22%!important;
 	}
+	/*contact info */
+	#map 
+	{
+		margin-left: 30px!important;
+		margin-right: 30px!important;
+	}
+	
 }
 @media (max-width: 680px)
 {
