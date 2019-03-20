@@ -437,6 +437,40 @@ p,button,input{
 	margin-right: 40px;
 	margin-top: 10px;
 }
+/*about-section*/
+.about-section
+{
+	margin-top: 260px;
+}
+.about-section h1
+{
+	letter-spacing: 3px;
+}
+.about-section p {
+	margin-top: 40px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.about-section ol
+{
+	margin-top: 40px;
+}
+.about-section ol li
+{
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.gallery-section
+{
+	background-color: #29abcc;
+	color:white;
+}
+.gallery-section img:hover
+{
+	border:1px solid  #991f49;
+}
 /*footer*/
 .site-footer
 {	
