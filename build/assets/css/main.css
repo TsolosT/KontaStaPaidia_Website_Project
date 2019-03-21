@@ -518,7 +518,7 @@ p,button,input{
 
 .input-mail:hover,.input-mail:focus
 {
-	border: 1px solid #991f49;;
+	border: 1px solid #991f49;
 }
 /*event page */
 .event-section
@@ -533,6 +533,44 @@ p,button,input{
 #paging-ul 
 {
 	width: 180px;
+}
+/*donate page*/
+.donate-section
+{
+	background-color: #29abcc;
+	margin-top: 200px;
+	margin-bottom: 80px;
+	color:white;
+}
+.donation-contact-info
+{
+	max-width: 300px;
+	min-width: 250px;
+}
+.amount-btn-ul li 
+{
+	display: inline-block;
+}
+.other-amount
+{
+	max-width: 300px;
+    min-width: 156px;
+}
+.other-amount:focus,.other-amount:hover{
+	border-color:#991f49;;
+}
+.amount-btn
+{
+	color:black;
+	background-color: white;
+	width: 80px;
+	border-radius: 8px;
+	margin: 5px;
+}
+.amount-btn:hover,.amount-btn:focus,.active-amount
+{
+	color:white;;
+	background-color: #991f49;
 }
 /*footer*/
 .site-footer

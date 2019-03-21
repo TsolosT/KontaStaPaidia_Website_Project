@@ -30,7 +30,11 @@ $(document).ready(function ()
 			}});
 		//initialize google map
 		initMap();
-
+		//add active class one donation amount btn
+		 $(".amount-btn").on("click",function(){
+			 $(".amount-btn .active-amount").removeClass("active-amount");
+			 $(this).addClass("active-amount");
+		 });
 });
 
 // Initialize and add the map
