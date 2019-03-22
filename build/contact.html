@@ -6,22 +6,22 @@
 	<!--Website Icon-->
 	<link rel="icon" type="image/ico" href="assets/images/icons/logo_icon.png" >
 	<!-- Styles -->
-	<link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
 	 <!-- Custom Style-->
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-		<!-- Header-->
+	<!-- Header-->
 <nav id="header" class="navbar navbar-expand-lg  fixed-top navbar-light d-flex flex-row justify-content-around ">
-	
-	
 	<!-- First line -->	
 	<div id="top-first-line" class="d-flex flex-row align-items-center justify-content-around ">
-		<div class="purpose-info p-0 ml-sm-5 ml-xs-1 ">Created for educational purposes</div>
+		<div class="purpose-info p-0 ml-sm-5 ml-xs-1" data-tag="educationalPurpose">Created for educational purposes</div>
 	 	<div class="lang-changer pr-xs-0  mr-xs-0 mr-sm-5 ">
-			<img src="assets/images/icons/Globe-128.png" alt="lang icon"> 
-				<strong>English </strong>
-			<img src="assets/images/icons/Arrowhead-Down-128.png" alt="dropdown arrow">
+				<img src="assets/images/icons/Globe-128.png" alt="">
+			<select id="langselector" class="my-1">
+			  <option value="en">English</option>
+			  <option value="gr">Greek</option>
+			</select>
 		</div>
 	</div>
 		<!-- Second line -->
@@ -38,25 +38,23 @@
 						 </button>
 				</div> 
 		</div>
-					
-	
 		  <div class="col-lg-8 collapse navbar-collapse" id="navbarSupportedContent">
 			<ul id="nav" class="navbar-nav ml-auto">
 			  <li class="nav-item">
-				<a class="nav-link " href="index.html">Home</a>
+				<a id="homeLink" class="nav-link " href="index.html" data-tag="homeLink">Home</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="events.html">Events</a>
+				<a class="nav-link" href="events.html" data-tag="eventLink">Events</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="about.html">About Us</a>
+				<a class="nav-link" href="about.html" data-tag="aboutLink">About Us</a>
 			  </li>
 				 <li class="nav-item">
-				<a class="nav-link active" href="contact.html">Contact Us</a>
+				<a class="nav-link active" href="contact.html" data-tag="contactLink">Contact Us</a>
 			  </li>
 				 <li class="nav-item">
 						<button type="button" class="btn btn-primary donate-btn-nav p-0 mr-5">
-							<a class="nav-link" href="donate.html">Donate  </a>
+							<a class="nav-link" href="donate.html" data-tag="donateLink">Donate</a>
 					 </button>
 			  </li>
 			</ul>
@@ -67,14 +65,14 @@
 	<!--Contact info-map section-->
 	<div class="container contact-section">
 		<div class="row">
-			<h1 class="mx-auto mt-2  px-5 ">Contact Us</h1>
+			<h1 class="mx-auto mt-2  px-5 " data-tag="contactTitle">Contact Us</h1>
 		</div>
 		<div class="row mb-5">
 			<div class="col-sm-6 col-xs-12">
-			 <h3>Contact Information</h3>
+			 <h3 data-tag="contactInfoTitle">Contact Information</h3>
 				<p><strong>Email:</strong> info@kontastapaidia.org</p>
-				<p><strong>Phone:</strong> +30 24120 12313</p>
-				<p><strong>Address:</strong> Suntagma 15, Athens, Greece</p>
+				<p><strong data-tag="contactPhone">Phone:</strong> +30 24120 12313</p>
+				<p><strong data-tag="contactAddressTitle">Address:</strong> <span data-tag="contactAddressInfo">Suntagma 15, Athens, Greece</span></p>
 			</div>
 			<div id="map" class="col-sm-6 col-xs-10 "></div>
 		</div>
@@ -82,50 +80,53 @@
 	<!--message form section-->
 	<div class="container message-form mb-5 p-5">
 		<div class="row mb-5">
-			<h2 class="mx-auto mt-2">Message Us</h2>
+			<h2 class="mx-auto mt-2" data-tag="contactFormTitle">Message Us</h2>
 		</div>
 		<form>
 			<div class="row">		
 				<div class="col-md-6 col-xs-12">
 					<div class="form-group mx-5">
-						<input type="text" class="form-control input-mail" aria-describedby="nameHelp" placeholder="Enter your name">
+						<input type="text" class="form-control input-mail" aria-describedby="nameHelp" placeholder="Enter your name" data-target="InputFullName">
 					 </div>
 					<div class="form-group mx-5">
-						<input type="email" class="form-control input-mail" aria-describedby="emailHelp" placeholder="Enter your email">
-						<small id="emailHelp" class="form-text  text-light">We'll never share your email with anyone else.</small>
+						<input type="email" class="form-control input-mail" aria-describedby="emailHelp" placeholder="Enter your email" data-target="InputEmail">
+						<small id="emailHelp" class="form-text  text-light" data-tag="contactSmallInfo">We'll never share your email with anyone else.</small>
 					 </div>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					  <div class="form-group">
-						<textarea class="form-control input-mail"  placeholder="Enter your message..." rows="8"></textarea>
+						<textarea class="form-control input-mail"  placeholder="Enter your message..." rows="8" data-target="InputTextArea"></textarea>
 					  </div>
 				</div>
 				<div class="col-md-6 col-xs-12 mt-3 mx-auto">
-					<button type="submit" class="btn action-btn-primary px-5">Send</button>
+					<button type="submit" class="btn action-btn-primary px-5" data-tag="btnSend">Send</button>
 				</div>
 			</div>
 		</form>
 	</div>	
-<!--footer-->
-			<footer class="site-footer">
-				<div class="row justify-content-around ">
-					<div class="col-md-3 col-sm-8 ml-3 sitemap">
-						<h3>Site Map</h3>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="events.html">Events</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-							<li><a href="donate.html">Donate</a></li>
+	<!--footer-->
+<footer class="site-footer">
+				<div class="row justify-content-around">
+					<div class="col-md-3 col-sm-8 sitemap ">
+						<h3 data-tag="footerSitemap">Site Map</h3>
+						<ul class="m-2">
+							<li><a href="index.html" data-tag="homeLink">Home</a></li>
+							<li><a href="events.html" data-tag="eventLink">Events</a></li>
+							<li><a href="about.html" data-tag="aboutLink">About Us</a></li>
+							<li><a href="contact.html" data-tag="contactLink">Contact Us</a></li>
+							<li><a href="donate.html" data-tag="donateLink">Donate</a></li>
+						
 						</ul>
 					</div>
-					<div class="col-md-3 col-sm-8  ml-1 mr-0 mt-auto mb-auto social-media">
-							<h5>Find us on</h5>					
+					<div class="col-md-3 col-sm-8  my-auto social-media">
+							<h5 data-tag="footerFindUs">Find us on</h5>					
 						 <span>
 							 <a href="https://www.facebook.com/" target="_blank" id="facebook-icon"></a>
 							<a href="https://twitter.com/"  target="_blank" id="twitter-icon"> </a>
 							<a href="https://www.instagram.com/" target="_blank" id="instagram-icon"> </a>
 						</span>	
+							
+						
 					</div>
 					<div class="col-md-1 col-sm-8  mb-sm-3 mr-0 mt-5  ">
 						<button id="go-top-btn" title="Go To Top"><img src="assets/images/icons/go_top.png" alt="Go Top"></button>
@@ -133,19 +134,19 @@
 				</div>
 				<div class="row align-content-center ">
 					<div class="col-12 mr-auto ml-auto">
-						<h5>Copyrights &copy; 
+						<span data-tag="footerCopyrights">Copyrights </span>
+							&copy; 
 							<script type="text/javascript">
 							document.write("2006 - "+ new Date().getFullYear());
 							</script> 
-							. Konta sta Paidia</h5>
+							. <span data-tag="footerTitle">Konta sta Paidia</span>
 					</div>
 				</div>
 			</footer>
 </div>
-
 	<!--Plugins Scripts-->
-	<script src="assets/plugins/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/plugins/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendors/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
 	 <script async defer
    	 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-nofBO3LMm4CP7YrJ2lgNcQe2Es4nJAQ&callback=initMap">
     </script>

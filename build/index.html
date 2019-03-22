@@ -6,7 +6,7 @@
 	<!--Website Icon-->
 	<link rel="icon" type="image/ico" href="assets/images/icons/logo_icon.png" >
 	<!-- Styles -->
-	<link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	 <!-- Custom Style-->
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -14,15 +14,15 @@
 <body>
 	<!-- Header-->
 <nav id="header" class="navbar navbar-expand-lg  fixed-top navbar-light d-flex flex-row justify-content-around ">
-	
-	
 	<!-- First line -->	
 	<div id="top-first-line" class="d-flex flex-row align-items-center justify-content-around ">
-		<div class="purpose-info p-0 ml-sm-5 ml-xs-1 ">Created for educational purposes</div>
-	 	<div class="lang-changer pr-xs-0  mr-xs-0 mr-sm-5 ">
-			<img src="assets/images/icons/Globe-128.png" alt="lang icon"> 
-				<strong>English </strong>
-			<img src="assets/images/icons/Arrowhead-Down-128.png" alt="dropdown arrow">
+		<div class="purpose-info p-0 ml-sm-5 ml-xs-1" data-tag="educationalPurpose">Created for educational purposes</div>
+	 	<div class="lang-changer pr-xs-0  mr-xs-0 mr-sm-5">
+			<img src="assets/images/icons/Globe-128.png" alt="">
+			<select id="langselector" class="my-1">
+			  <option value="en">English</option>
+			  <option value="gr">Greek</option>
+			</select>
 		</div>
 	</div>
 		<!-- Second line -->
@@ -39,32 +39,29 @@
 						 </button>
 				</div> 
 		</div>
-					
-	
 		  <div class="col-lg-8 collapse navbar-collapse" id="navbarSupportedContent">
 			<ul id="nav" class="navbar-nav ml-auto">
 			  <li class="nav-item">
-				<a class="nav-link active" href="index.html">Home</a>
+				<a id="homeLink" class="nav-link active" href="index.html" data-tag="homeLink">Home</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="events.html">Events</a>
+				<a class="nav-link" href="events.html" data-tag="eventLink">Events</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="about.html">About Us</a>
+				<a class="nav-link" href="about.html" data-tag="aboutLink">About Us</a>
 			  </li>
 				 <li class="nav-item">
-				<a class="nav-link" href="contact.html">Contact Us</a>
+				<a class="nav-link" href="contact.html" data-tag="contactLink">Contact Us</a>
 			  </li>
 				 <li class="nav-item">
 						<button type="button" class="btn btn-primary donate-btn-nav p-0 mr-5">
-							<a class="nav-link" href="donate.html">Donate  </a>
+							<a class="nav-link" href="donate.html" data-tag="donateLink">Donate</a>
 					 </button>
 			  </li>
 			</ul>
 		  </div>
 		</div>	
 </nav>
-	
 	<div class="container-fluid">
 		<!-- Hero-->
 			<div id="carouselFull" class="carousel slide" data-ride="carousel">
@@ -85,8 +82,8 @@
 							  <img src="assets/images/slider_3.jpg" alt="First slide" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-1">
-								<h2 id="action-btn-1">Help a child by making a donation</h2>
-								<button class="btn action-btn-primary"><a href="donate.html">Make Now</a></button>
+								<h2 id="action-btn-1" data-tag="sliderTextFirst">Help a child by making a donation</h2>
+								<button class="btn action-btn-primary"><a href="donate.html" data-tag="sliderBtnFirst">Make Now</a></button>
 						   </div>
 					   </div>
 					   <div class="carousel-item  ">
@@ -97,19 +94,19 @@
 							  <img src="assets/images/slider_2.jpg" alt="Second slide" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-2 d-flex flex-column justify-content-end align-content-end" >
-									<button class="btn action-btn-secondary"><a href="contact.html">Became a volunteer</a></button>
+									<button class="btn action-btn-secondary"><a href="contact.html" data-tag="sliderBtnSecont">Became a volunteer</a></button>
 						   </div>
 					   </div>
 					   <div class="carousel-item  ">
 							<picture  class="d-block img-fluid">
-							  <source media="(min-width:991px)" srcset="assets/images/slider_1.jpg">
-							   <source media="(min-width:601px)" srcset="assets/images/slider_medium_1.jpg">
-							  <source media="(max-width: 600px)" srcset="assets/images/slider_mobile_1.jpg">
+							  <source media="(min-width:1300px)" srcset="assets/images/slider_1.jpg">
+							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_1.jpg">
+							  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_1.jpg">
 							  <img src="assets/images/slider_1.jpg" alt="Third slide" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-3">
-									<h2>ChildHood Cancer</h2>
-									<a href="#">Learn more <i class="fa fa-arrow-right"></i></a>				   		
+									<h2 data-tag="sliderTextThird">ChildHood Cancer</h2>
+									<a href="#" data-tag="sliderBtnThird">Learn more <i class="fa fa-arrow-right"></i></a>				   		
 						   </div>
 					   </div>
 				   </div>
@@ -126,25 +123,25 @@
 			<!--Section : Some work-->
 			<div class="container some-work">
 				<div class="d-flex flex-row align-content-center justify-content-center ">
-					<h1>Some of our Work</h1>
+					<h1 data-tag="someWorkTitle">Some of our Work</h1>
 				</div>
 				<div class="d-flex flex-sm-row flex-column justify-content-around  ">				
 					<div class="card work-1 mb-5 mr-auto ml-auto " style="width: 14rem;">
 					  <img src="assets/images/shelter_work_1.png" class="card-img-top" alt="shelter work">
 					  <div class="card-body ">
-						<a href="#" class="card-a">Provision of Shelter</a>
+						<a href="#" class="card-a" data-tag="someWorkCardFirst">Provision of Shelter</a>
 					  </div>
 					</div>
 					<div class="card work-2 mb-5 mr-auto ml-auto  ml-sm-3" style="width: 14rem;">
 					  <img src="assets/images/medical_work_2.png" class="card-img-top" alt="Medical care">
 					  <div class="card-body">
-						<a href="#" class="card-a">Medical Care</a>
+						<a href="#" class="card-a" data-tag="someWorkCardSecond">Medical Care</a>
 					  </div>
 					</div>
 					<div class="card work-3 mb-5 mr-auto ml-auto  ml-sm-3" style="width: 14rem;">
 					  <img src="assets/images/care_work_3.png" class="card-img-top" alt="Psychological support">
 					  <div class="card-body">
-						<a href="#" class="card-a">Psychological Support</a>
+						<a href="#" class="card-a" data-tag="someWorkCardThird">Psychological Support</a>
 					  </div>
 					</div>
 				</div>
@@ -154,7 +151,7 @@
 				<div class="short-about-opacity">
 					<div id="about-text-container" class="d-flex flex-column align-content-center justify-content-center">
 						<div>
-							<h1>Some words about us</h1>
+							<h1 data-tag="shortAboutTitle">Some words about us</h1>
 						</div>
 						<div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatem error nulla reprehenderit ullam. Impedit vel eaque doloremmodi!Pariatur debitis placeat quis tenetur illum expedita praesentium, voluptas cupiditate. Fugiat.
@@ -162,7 +159,7 @@
 							Obcaecati cum ex, ad delectus dolores distinctio ea doloremque officia?s.</p>
 							<p>Earum, praesentium! Natus eos, veritatis nostrum hic vitae tempora incidunt consequuntur ratione repellendus! Eius perspiciatis harum excepturi numquam deserunt aliquid fuga quaerat labore fugit sequi! Non possimus, ab assumenda recusandae.</p>
 						</div>
-						<div><a href="about.html" class="btn action-btn-primary">See more <i class="fa fa-arrow-right"></i></a></div>
+						<div><a href="about.html" class="btn action-btn-primary" data-tag="btnSeeMore">See more <i class="fa fa-arrow-right"></i></a></div>
 					</div>
 				</div>
 			</div>
@@ -171,13 +168,13 @@
 				
 		 		<div class="row justify-content-between ">
 					<div id="event-h1" class="col-12 ml-auto mr-auto mb-5">
-						<h1>Upcoming Events</h1>
+						<h1 data-tag="someUpcomingEventsTitle">Upcoming Events</h1>
 					</div>
 						<div class="col-md-5 col-sm-10 mb-5 mr-auto ml-auto" id="event-1">
-							<a href="#" class="btn action-btn-primary event-see-more">See More</a>
+							<a href="#" class="btn action-btn-primary event-see-more" data-tag="btnSeeMore">See More</a>
 						</div>
 						<div class="col-md-5 col-sm-10 col-xs-8 mb-5 mr-auto ml-auto" id="event-2">
-							<a href="#" class="btn action-btn-primary  event-see-more">See More</a>
+							<a href="#" class="btn action-btn-primary  event-see-more" data-tag="btnSeeMore">See More</a>
 						</div>
 		 			
 		 		</div>
@@ -186,7 +183,7 @@
 			<div class="container news-box justify-content-around">
 				
 				<div id="news-h1" class="col-12 mx-auto mb-5">
-						<h1>Recent Events</h1>
+						<h1 data-tag="someRecentNewsTitle">Recent News</h1>
 					</div>
 				<!--posts-->
 				<div class="row news-post-box carousel slide" data-type="multi" id="carousel-post" data-ride="carousel"  data-pause="hover">
@@ -194,42 +191,42 @@
 								<div  class="card carousel-item active " style="width: 12rem;">
 								  <img src="assets/images/post_img.png" class="card-img-top" alt="...">
 								  <div class="card-body">
-									<a href="#" class="btn action-btn-primary">Read More</a>
+									<a href="#" class="btn action-btn-primary" data-tag="btnReadMore">Read More</a>
 								  </div>
 								</div>
 						   
 								<div  class="card carousel-item" style="width: 12rem;">
 								  <img src="assets/images/post_img_2.png" class="card-img-top" alt="...">
 								  <div class="card-body">
-									<a href="#" class="btn action-btn-primary">Read More</a>
+									<a href="#" class="btn action-btn-primary" data-tag="btnReadMore">Read More</a>
 								  </div>
 								</div>
 						   
 								<div class="card carousel-item " style="width: 12rem;">
 								  <img src="assets/images/post_img.png" class="card-img-top" alt="...">
 								  <div class="card-body">
-									<a href="#" class="btn action-btn-primary">Read More</a>
+									<a href="#" class="btn action-btn-primary" data-tag="btnReadMore">Read More</a>
 								  </div>
 								</div>
 						   
 								<div class="card carousel-item" style="width: 12rem;">
 								  <img src="assets/images/post_img_2.png" class="card-img-top" alt="...">
 								  <div class="card-body">
-									  <a href="#" class="btn action-btn-primary">Read More</a>
+									  <a href="#" class="btn action-btn-primary" data-tag="btnReadMore">Read More</a>
 									</div>
 								 </div>	
 						  	
 						    <div class="card carousel-item " style="width: 12rem;">
 								  <img src="assets/images/post_img.png" class="card-img-top" alt="...">
 								  <div class="card-body">
-									<a href="#" class="btn action-btn-primary">Read More</a>
+									<a href="#" class="btn action-btn-primary" data-tag="btnReadMore">Read More</a>
 								  </div>
 								</div>
 						   
 								<div class="card  carousel-item" style="width: 12rem;">
 								  <img src="assets/images/post_img_2.png" class="card-img-top" alt="...">
 								  <div class="card-body">
-									  <a href="#" class="btn action-btn-primary">Read More</a>
+									  <a href="#" class="btn action-btn-primary" data-tag="btnReadMore">Read More</a>
 									</div>
 								 </div>	
 						</div>
@@ -249,7 +246,7 @@
 			<!--Sponsors-->
 			<div class="row container-fluid spons-boxs justify-content-center">
 					<div class="spons-title col-12 mr-auto ml-auto mb-5">
-						<h2>Our Sponsors</h2>
+						<h2 data-tag="sponsorsTitle">Our Sponsors</h2>
 					</div>
 					
 					<div class="spons-imgs">
@@ -265,21 +262,21 @@
 
 				</div>
 			<!--footer-->
-			<footer class="site-footer">
-				<div class="row justify-content-around ">
-					<div class="col-md-3 col-sm-8 ml-3 sitemap">
-						<h3>Site Map</h3>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="events.html">Events</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-							<li><a href="donate.html">Donate</a></li>
+<footer class="site-footer">
+				<div class="row justify-content-around">
+					<div class="col-md-3 col-sm-8 sitemap ">
+						<h3 data-tag="footerSitemap">Site Map</h3>
+						<ul class="m-2">
+							<li><a href="index.html" data-tag="homeLink">Home</a></li>
+							<li><a href="events.html" data-tag="eventLink">Events</a></li>
+							<li><a href="about.html" data-tag="aboutLink">About Us</a></li>
+							<li><a href="contact.html" data-tag="contactLink">Contact Us</a></li>
+							<li><a href="donate.html" data-tag="donateLink">Donate</a></li>
 						
 						</ul>
 					</div>
-					<div class="col-md-3 col-sm-8  ml-1 mr-0 mt-auto mb-auto social-media">
-							<h5>Find us on</h5>					
+					<div class="col-md-3 col-sm-8  my-auto social-media">
+							<h5 data-tag="footerFindUs">Find us on</h5>					
 						 <span>
 							 <a href="https://www.facebook.com/" target="_blank" id="facebook-icon"></a>
 							<a href="https://twitter.com/"  target="_blank" id="twitter-icon"> </a>
@@ -294,20 +291,20 @@
 				</div>
 				<div class="row align-content-center ">
 					<div class="col-12 mr-auto ml-auto">
-						<h5>Copyrights &copy; 
+						<span data-tag="footerCopyrights">Copyrights </span>
+							&copy; 
 							<script type="text/javascript">
 							document.write("2006 - "+ new Date().getFullYear());
 							</script> 
-							. Konta sta Paidia</h5>
+							. <span data-tag="footerTitle">Konta sta Paidia</span>
 					</div>
 				</div>
 			</footer>
 	</div>
-
-	
 	<!--Plugins Scripts-->
-	<script src="assets/plugins/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/plugins/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendors/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
+
 	<!--Custom Scripts -->
 	<script src="assets/js/app.js"></script>
 </body>

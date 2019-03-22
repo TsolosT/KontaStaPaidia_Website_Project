@@ -13,6 +13,11 @@ p,button,input{
 	font-family: 'Lato', sans-serif;
 }
 /*Custom Bootstrap */
+.row 
+{
+	margin-right: 0; 
+     margin-left: 0; 
+}
 .active
 {
 	color:#29abcc !important;
@@ -138,16 +143,31 @@ p,button,input{
 	width: 100%;
 	max-height: 40px;
 }
-.lang-changer{
+select {
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  appearance:none;
+ -webkit-appearance:none;
+ -moz-appearance:none;
+ -o-appearance:none;
+ -ms-appearance:none;
+  background: url(../images/icons/arrow-down_s.png) no-repeat 100%;
+  padding-right: 30px;
+}
+#langselector
+{
 	color:white;
-	
+	border:none;
+}
+#langselector:focus
+{
+	color:#29abcc;
 }
 .lang-changer img {
-	width: 50px;
+	width: 40px;
 }
-.lang-changer img:last-of-type {
-	width: 25px;
-}
+
 .purpose-info{
 	color:#FFEB00;
 }
@@ -391,7 +411,7 @@ p,button,input{
 }
 .event-see-more
 {
-	margin:240px 0 10px 210px;	
+	margin:240px 0 10px 100px;	
 }
 /*posts news*/
 #news-h1
@@ -721,10 +741,6 @@ p,button,input{
 	{
 		width: 35px;
 	}
-	.lang-changer img:last-of-type 
-	{
-		width: 15px;
-	}
 	/*hero*/
 	#carouselFull{
 		margin-top: auto;
@@ -821,7 +837,7 @@ p,button,input{
 	}
 	.sitemap 
 	{
-		margin-left: 33%!important;
+		margin-left: 60px!important;
 		margin-right: auto!important;
 	}
 	.social-media
@@ -843,6 +859,7 @@ p,button,input{
 	{
 		margin-left: 15%!important;
 	}
+	
 }
 @media (max-width: 1008px)
 { /*header*/
@@ -864,6 +881,7 @@ p,button,input{
 	{
 		margin:210px 0 10px 120px!important;
 	}
+	
 }
 @media (max-width: 1126px)
 {
