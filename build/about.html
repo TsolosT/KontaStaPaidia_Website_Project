@@ -8,7 +8,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
 	 <!-- Custom Style-->
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/main.min.css">
 </head>
 <body>
 	<!-- Header-->
@@ -100,16 +100,54 @@
 				</div>
 				<div class="row pb-3 mx-auto">
 					<div class="col-12">
-						<img src="assets/images/gallery_1.jpg" class="img-fluid col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Child with cancer smiles">
-						<img src="assets/images/gallery_2.jpg" class="img-fluid  col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Child with cancer smiles">
-						<img src="assets/images/gallery_3.jpg" class="img-fluid  col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Child with cancer painting">
+						<img id="1" src="assets/images/gallery_1.jpg" onclick="openModal();currentSlide(1);" class="img-fluid hover-shadow col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Child with cancer smiles">
+						<img id="2" src="assets/images/gallery_2.jpg" onclick="openModal();currentSlide(2);" class="img-fluid hover-shadow col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Child with cancer smiles">
+						<img id="3" src="assets/images/gallery_3.jpg" onclick="openModal();currentSlide(3);" class="img-fluid hover-shadow col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Child with cancer painting">
 					</div>
 					<div class="col-12">
-						<img src="assets/images/slider_medium_3.jpg" class="img-fluid  col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Playing time">
-						<img src="assets/images/slider_medium_2.jpg" class="img-fluid  col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Support message">
-						<img src="assets/images/gallery_4.jpg" class="img-fluid col-xs-12  col-sm-3 px-0 my-3 mx-1" alt="Our provision of shelters to families">
+						<img id="4" src="assets/images/slider_medium_3.jpg" onclick="openModal();currentSlide(4);" class="img-fluid hover-shadow col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Playing time">
+						<img id="5" src="assets/images/slider_medium_2.jpg" onclick="openModal();currentSlide(5);" class="img-fluid hover-shadow col-xs-12 col-sm-3 px-0 my-3 mx-1" alt="Support message">
+						<img id="6" src="assets/images/gallery_4.jpg" onclick="openModal();currentSlide(6);" class="img-fluid hover-shadow col-xs-12  col-sm-3 px-0 my-3 mx-1" alt="Our provision of shelters to families">
 					</div>
 				</div>
+			</div>
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal-lightbox">
+			  <span class="close-lightbox cursor" onclick="closeModal();" >&times;</span>
+			  <div class="modal-lightbox-content">
+
+				<div class="mySlides-lightbox">
+				  <div class="numbertext-lightbox">1 / 4</div>
+				  <img src="assets/images/gallery_1.jpg" style="width:100%" alt="Child with cancer smiles">
+				</div>
+
+				<div class="mySlides-lightbox">
+				  <div class="numbertext-lightbox">2 / 4</div>
+				  <img src="assets/images/gallery_3_big.jpg" style="width:100%" alt="Child with cancer smiles">
+				</div>
+
+				<div class="mySlides-lightbox">
+				  <div class="numbertext-lightbox">3 / 4</div>
+				  <img src="assets/images/gallery_3.jpg" style="width:100%"  alt="Child with cancer painting">
+				</div>
+
+				<div class="mySlides-lightbox">
+				  <div class="numbertext-lightbox">4 / 4</div>
+				  <img src="assets/images/slider_medium_3.jpg" style="width:100%" alt="Playing time">
+				</div>
+				<div class="mySlides-lightbox">
+				  <div class="numbertext-lightbox">5 / 6</div>
+				  <img src="assets/images/slider_medium_2.jpg" style="width:100%" alt="Support message">
+				</div>
+				<div class="mySlides-lightbox">
+				  <div class="numbertext-lightbox">6 / 6</div>
+				  <img src="assets/images/gallery_4.jpg" style="width:100%" alt="Our provision of shelters to families">
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev-lightbox" onclick="plusSlides(-1);">&#10094;</a>
+				<a class="next-lightbox" onclick="plusSlides(1);">&#10095;</a>	  
+			  </div>
 			</div>
 		</div>
 	<!--footer-->
@@ -156,7 +194,7 @@
 	<script src="assets/vendors/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
 	<!--Custom Scripts -->
-	<script src="assets/js/app.js"></script>	
+	<script src="assets/js/app.min.js"></script>	
 	
 	
 </body>
