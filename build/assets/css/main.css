@@ -18,7 +18,13 @@ h6 {
     font-family: 'Open Sans', sans-serif;
     padding-top: 10px;
 }
-
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+#myModal-thankmsg
+{
+	top:250px;
+}
 p,
 button,
 input {

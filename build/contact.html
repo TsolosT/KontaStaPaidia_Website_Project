@@ -8,7 +8,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
 	 <!-- Custom Style-->
-	<link rel="stylesheet" href="assets/css/main.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 	<!-- Header-->
@@ -82,26 +82,45 @@
 		<div class="row mb-5">
 			<h2 class="mx-auto mt-2" data-tag="contactFormTitle">Message Us</h2>
 		</div>
-		<form>
+		<form action="https://script.google.com/macros/s/AKfycbz2VN_hU6Vt8iBNPY_EkN49XXzPFUqpTDIg_QnlmivMaDlTKEtc/exec" class="gform" method="POST">
 			<div class="row">		
 				<div class="col-md-6 col-xs-12">
 					<div class="form-group mx-5">
-						<input type="text" class="form-control input-mail" aria-describedby="nameHelp" placeholder="Enter your name" data-target="InputFullName">
+						<input name="name" type="text" class="form-control input-mail" aria-describedby="nameHelp" placeholder="Enter your name" data-target="InputFullName">
 					 </div>
 					<div class="form-group mx-5">
-						<input type="email" class="form-control input-mail" aria-describedby="emailHelp" placeholder="Enter your email" data-target="InputEmail">
+						<input name="email" type="email" class="form-control input-mail" aria-describedby="emailHelp" placeholder="Enter your email" data-target="InputEmail">
 						<small id="emailHelp" class="form-text  text-light" data-tag="contactSmallInfo">We'll never share your email with anyone else.</small>
 					 </div>
 				</div>
+				<input id="honeypot" type="text" name="honeypot" value=""/>
 				<div class="col-md-6 col-xs-12">
 					  <div class="form-group">
-						<textarea class="form-control input-mail"  placeholder="Enter your message..." rows="8" data-target="InputTextArea"></textarea>
+						<textarea name="message" class="form-control input-mail"  placeholder="Enter your message..." rows="8" data-target="InputTextArea"></textarea>
 					  </div>
 				</div>
 				<div class="col-md-6 col-xs-12 mt-3 mx-auto">
 					<button type="submit" class="btn action-btn-primary px-5" data-tag="btnSend">Send</button>
 				</div>
 			</div>
+				  <div id="myModal-thankmsg" class="modal" tabindex="-1" role="dialog">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title"><img src="assets/images/logo_mobile.png" alt="KontaStaPaidia">    Email email was sent successfully!!</h5>
+							<button type="button" class="close close-btn" onclick="closeModalMsg();" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<p>Thank you for send us a message.We will contact with you soon!!</p>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn close-btn btn-secondary" onclick="closeModalMsg();" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
 		</form>
 	</div>	
 	<!--footer-->
@@ -147,10 +166,11 @@
 	<!--Plugins Scripts-->
 	<script src="assets/vendors/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
+	<script data-cfasync="false" type="text/javascript" src="assets/vendors/js/form-submission-handler.js"></script>
 	 <script async defer
    	 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-nofBO3LMm4CP7YrJ2lgNcQe2Es4nJAQ&callback=initMap">
     </script>
 	<!--Custom Scripts -->
-	<script src="assets/js/app.min.js"></script>	
+	<script src="assets/js/app.js"></script>	
 </body>
 </html>
