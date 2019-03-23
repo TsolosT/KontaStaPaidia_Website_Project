@@ -8,6 +8,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/vendors/css/jssocials-theme-classic.css">
 	 <!-- Custom Style-->
 	<link rel="stylesheet" href="assets/css/main.min.css">
 </head>
@@ -171,14 +172,64 @@
 						<h1 data-tag="someUpcomingEventsTitle">Upcoming Events</h1>
 					</div>
 						<div class="col-md-5 col-sm-10 mb-5 mr-auto ml-auto" id="event-1">
-							<a href="#" class="btn action-btn-primary event-see-more" data-tag="btnSeeMore">See More</a>
+							<a href="#" class="btn action-btn-primary event-see-more" data-tag="btnSeeMore" data-toggle="modal" data-target="#exampleModalEvent1">See More</a>
 						</div>
 						<div class="col-md-5 col-sm-10 col-xs-8 mb-5 mr-auto ml-auto" id="event-2">
-							<a href="#" class="btn action-btn-primary  event-see-more" data-tag="btnSeeMore">See More</a>
-						</div>
-		 			
+							<a href="#" class="btn action-btn-primary  event-see-more" data-tag="btnSeeMore" data-toggle="modal" data-target="#exampleModalEvent2">See More</a>
+						</div>	
 		 		</div>
 		 	</div>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalEvent1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Upcoming Charity Basketball Game Event</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+						<img src="assets/images/charity_event_1.jpg" alt="Charity Event 1" width="100%">
+					  	<h4>Lorem ispum deleta est</h4>
+					  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium officiis quasi, fugiat possimus eius repellendus cupiditate, culpa reprehenderit alias maxime, atque minima vel dicta at animi quos enim cum. Dolorem. </p>
+				  </div>
+				  <div class="modal-footer">
+					  <span>
+						Share on 
+					  	<span class="shareRoundIcons">
+						 </span>
+					  </span>
+					<button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		<div class="modal fade" id="exampleModalEvent2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" >Upcoming Charity Bazaar Event</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+						<img src="assets/images/charity_event_2.jpg.png" alt="Charity Event 2" width="100%">
+					  	<h4>Lorem ispum deleta est</h4>
+					  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium officiis quasi, fugiat possimus eius repellendus cupiditate, culpa reprehenderit alias maxime, atque minima vel dicta at animi quos enim cum. Dolorem. </p>
+				  </div>
+				  <div class="modal-footer">
+					 <span>
+						Share on 
+					  	<span class="shareRoundIcons">
+						 </span>
+					  </span>
+					<button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
 			<!--News -->
 			<div class="container news-box justify-content-around">
 				
@@ -241,8 +292,6 @@
 					</div>
 				
 				</div>
-				
-				
 			<!--Sponsors-->
 			<div class="row container-fluid spons-boxs justify-content-center">
 					<div class="spons-title col-12 mr-auto ml-auto mb-5">
@@ -282,8 +331,6 @@
 							<a href="https://twitter.com/"  target="_blank" id="twitter-icon"> </a>
 							<a href="https://www.instagram.com/" target="_blank" id="instagram-icon"> </a>
 						</span>	
-							
-						
 					</div>
 					<div class="col-md-1 col-sm-8  mb-sm-3 mr-0 mt-5  ">
 						<button id="go-top-btn" title="Go To Top"><img src="assets/images/icons/go_top.png" alt="Go Top"></button>
@@ -304,7 +351,15 @@
 	<!--Plugins Scripts-->
 	<script src="assets/vendors/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
-
+	<script src="assets/vendors/js/jssocials.min.js"></script>
+	<script>
+		$(".shareRoundIcons").jsSocials({
+				showLabel: false,
+				showCount: false,
+				shareIn: "popup",
+				shares: [ "facebook", "twitter","pinterest",]
+			});
+	</script>
 	<!--Custom Scripts -->
 	<script src="assets/js/app.min.js"></script>
 </body>
