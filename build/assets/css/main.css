@@ -5,6 +5,7 @@
 /*Default */
 html,
 body {
+	scroll-behavior: smooth;
     width: 100%;
 }
 
@@ -17,6 +18,10 @@ h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
     padding-top: 10px;
+}
+.jssocials-share-pinterest
+{
+	display: none!important;
 }
 #honeypot {
   display: none; /*makes the field not visible to humans*/
@@ -33,6 +38,7 @@ input {
 
 #shareRoundIcons > * {
     display: inline-block !important;
+	
 }
 
 /*Custom Bootstrap */
@@ -308,7 +314,16 @@ select {
     background-color: #007694;
     border-color: #29abcc;
 }
-
+#slide-2-btn
+{
+	background-color: rgba(153, 31, 73,0.7);
+	border-color: rgb(153, 31, 73);
+}
+#slide-2-btn:hover
+{
+	background-color: rgb(153, 31, 73);
+	border-color: rgba(153, 31, 73,.7);
+}
 .action-slide-2 {
     top: auto;
     bottom: 30%;
