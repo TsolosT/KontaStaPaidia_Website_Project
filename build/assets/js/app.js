@@ -1,7 +1,6 @@
 // JavaScript Document
 $(document).ready(function () 			  
 {
-	adjustCalendarSizeInXS();
 	//nav toggler 
     $("nav").find("li").on("click", "a", function () 
 		{

@@ -895,7 +895,7 @@ img.hover-shadow {
 @media (max-width: 321px) {
 	
 	#posts {
-		padding-left: 44px;
+		padding-left: 44px!important;
 	}
 	#contact-title
 	{
@@ -919,7 +919,9 @@ img.hover-shadow {
         left: 30px;
         width: 120px !important;
     }
-
+#posts {
+		padding-left: 44px!important;
+	}
     .action-btn-secondary a {
         font-size: 12px !important;
     }
@@ -944,8 +946,13 @@ img.hover-shadow {
 }
 @media (max-width: 482px)
 {
-	#posts {
-		padding-left: 131px!important;
+	@supports (-ms-ime-align: auto) 
+	{
+  		.container-fluid
+		{
+          margin-top: 90px;	
+  		}
+		
 	}	
 }
 @media (max-width: 576px) {
@@ -1027,6 +1034,9 @@ img.hover-shadow {
         margin-left: 80px !important;
         margin-right: auto !important;
     }
+	#posts {
+		padding-left: 131px;
+	}	
 
 }
 
