@@ -63,8 +63,11 @@
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
-
-    
+    var name = document.getElementById("name-contact-input").value;
+  var email = document.getElementById("email-contact-input").value;
+  var message = document.getElementById("message-contact-input").value;
+     var thankYouMessage = document.getElementById("myModal-thankmsg");  
+      
     if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
       return false;
     }
@@ -74,7 +77,12 @@
         invalidEmail.style.display = "block";
         return false;
       }
-    } else {
+    }
+    else if (name == "" || email=="" || message=="") 
+  {
+    alert("All fields must be filled out");
+    return false;
+  } else {
       var url = form.action;
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
@@ -82,8 +90,7 @@
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
           form.reset();
-          var thankYouMessage = form.querySelector("#myModal-thankmsg");
-            thankYouMessage.style.display = "block";
+            thankYouMessage.style.display = "block";  
           return;
       };
       // url encode form data for sending as post data

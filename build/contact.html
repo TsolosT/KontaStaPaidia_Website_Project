@@ -80,21 +80,21 @@
 		<div class="row mb-5">
 			<h2 class="mx-auto mt-2" data-tag="contactFormTitle">Message Us</h2>
 		</div>
-		<form action="https://script.google.com/macros/s/AKfycbz2VN_hU6Vt8iBNPY_EkN49XXzPFUqpTDIg_QnlmivMaDlTKEtc/exec" class="gform" method="POST">
+		<form action="https://script.google.com/macros/s/AKfycbz2VN_hU6Vt8iBNPY_EkN49XXzPFUqpTDIg_QnlmivMaDlTKEtc/exec" class="gform" method="POST" onsubmit="validateForm();">
 			<div class="row">		
 				<div class="col-md-6 col-xs-12">
 					<div class="form-group mx-sm-5 mx-0">
-						<input name="name" type="text" class="form-control input-mail" aria-describedby="nameHelp" placeholder="Enter your name" data-target="InputFullName">
+						<input  id="name-contact-input" name="name" type="text" class="form-control input-mail" aria-describedby="nameHelp" placeholder="Enter your name" data-target="InputFullName">
 					 </div>
 					<div class="form-group mx-sm-5 mx-0">
-						<input name="email" type="email" class="form-control input-mail" aria-describedby="emailHelp" placeholder="Enter your email" data-target="InputEmail">
+						<input id="email-contact-input" name="email" type="email" class="form-control input-mail" aria-describedby="emailHelp" placeholder="Enter your email" data-target="InputEmail">
 						<small id="emailHelp" class="form-text  text-light" data-tag="contactSmallInfo">We'll never share your email with anyone else.</small>
 					 </div>
 				</div>
 				<input id="honeypot" type="text" name="honeypot" value=""/>
 				<div class="col-md-6 col-xs-12">
 					  <div class="form-group">
-						<textarea name="message" class="form-control input-mail"  placeholder="Enter your message..." rows="8" data-target="InputTextArea"></textarea>
+						<textarea id="message-contact-input"  name="message" class="form-control input-mail"  placeholder="Enter your message..." rows="8" data-target="InputTextArea"></textarea>
 					  </div>
 				</div>
 				<div class="col-md-6 col-xs-12 mt-3 mx-auto">
