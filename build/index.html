@@ -54,10 +54,8 @@
 				 <li class="nav-item">
 				<a class="nav-link" href="contact.html" data-tag="contactLink">Contact Us</a>
 			  </li>
-				 <li class="nav-item">
-						<button type="button" class="btn btn-primary donate-btn-nav p-0 mr-5">
-							<a class="nav-link" href="donate.html" data-tag="donateLink">Donate</a>
-					 </button>
+				<li class="nav-item">
+					<a class="btn btn-primary donate-btn-nav  mx-auto mr-lg-5 nav-link" href="donate.html" data-tag="donateLink">Donate</a>
 			  </li>
 			</ul>
 		  </div>
@@ -68,7 +66,7 @@
 			<div id="carouselFull" class="carousel slide" data-ride="carousel">
 				
 				 <!-- Indicators-->  
-				 <ol class="carousel-indicators">
+				 <ol class="carousel-indicators ">
 					   <li data-target="#carouselFull" data-slide-to="0" class="active"></li>
 					   <li data-target="#carouselFull" data-slide-to="1"></li>
 					   <li data-target="#carouselFull" data-slide-to="2"></li>
@@ -84,7 +82,7 @@
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-1">
 								<h2 id="action-btn-1" data-tag="sliderTextFirst">Help a child by making a donation</h2>
-								<button class="btn action-btn-primary"><a href="donate.html" data-tag="sliderBtnFirst">Make Now</a></button>
+								<a href="donate.html" class="btn action-btn-primary" data-tag="sliderBtnFirst">Make Now</a>
 						   </div>
 					   </div>
 					   <div class="carousel-item  ">
@@ -95,7 +93,7 @@
 							  <img src="assets/images/slider_2.jpg" alt="Second slide" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-2 d-flex flex-column justify-content-end align-content-end" >
-									<button id="slide-2-btn" class="btn action-btn-secondary"><a href="contact.html" data-tag="sliderBtnSecont">Became a volunteer</a></button>
+									<a id="slide-2-btn" class="btn action-btn-secondary" href="contact.html" data-tag="sliderBtnSecont">Became a volunteer</a>
 						   </div>
 					   </div>
 					   <div class="carousel-item  ">
@@ -124,7 +122,7 @@
 			<!--Section : Some work-->
 			<div class="container some-work">
 				<div class="d-flex flex-row align-content-center justify-content-center ">
-					<h1 data-tag="someWorkTitle">Some of our Work</h1>
+					<h2 data-tag="someWorkTitle">Some of our Work</h2>
 				</div>
 				<div class="d-flex flex-sm-row flex-column justify-content-around  ">				
 					<div class="card work-1 mb-5 mr-auto ml-auto " style="width: 14rem;">
@@ -195,8 +193,8 @@
 					  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium officiis quasi, fugiat possimus eius repellendus cupiditate, culpa reprehenderit alias maxime, atque minima vel dicta at animi quos enim cum. Dolorem. </p>
 				  </div>
 				  <div class="modal-footer">
-					  <span>
-						Share on 
+					  <span class="social-btns-box">	  
+						<span class="d-none d-sm-inline">Share on </span>
 					  	<span class="shareRoundIcons">
 						 </span>
 					  </span>
@@ -220,8 +218,8 @@
 					  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium officiis quasi, fugiat possimus eius repellendus cupiditate, culpa reprehenderit alias maxime, atque minima vel dicta at animi quos enim cum. Dolorem. </p>
 				  </div>
 				  <div class="modal-footer">
-					 <span>
-						Share on 
+					<span class="social-btns-box">	  
+						<span class="d-none d-sm-inline">Share on </span>
 					  	<span class="shareRoundIcons">
 						 </span>
 					  </span>
@@ -238,7 +236,7 @@
 					</div>
 				<!--posts-->
 				<div class="row news-post-box carousel slide" data-type="multi" id="carousel-post" data-ride="carousel"  data-pause="hover">
-					   <div id="posts" class="carousel-inner col-8 w-100 mx-auto" role="listbox"> 
+					   <div id="posts" class="carousel-inner col-sm-8 col-md-10 col-lg-8 w-100 mx-auto" role="listbox"> 
 								<div  class="card carousel-item active " style="width: 12rem;">
 								  <img src="assets/images/post_img.png" class="card-img-top" alt="...">
 								  <div class="card-body">
@@ -313,8 +311,8 @@
 			<!--footer-->
 <footer class="site-footer">
 				<div class="row justify-content-around">
-					<div class="col-md-3 col-sm-8 sitemap ">
-						<h3 data-tag="footerSitemap">Site Map</h3>
+					<div class="col-md-3 col-sm-4 sitemap ">
+						<h4 data-tag="footerSitemap">Site Map</h4>
 						<ul class="m-2">
 							<li><a href="index.html" data-tag="homeLink">Home</a></li>
 							<li><a href="events.html" data-tag="eventLink">Events</a></li>

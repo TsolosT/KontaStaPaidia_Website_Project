@@ -366,7 +366,7 @@ select {
     margin-bottom: 130px;
 }
 
-.some-work h1 {
+.some-work h2 {
     border-bottom: 1px solid black;
     padding: 0 50px 10px 50px;
     letter-spacing: 3px;
@@ -781,7 +781,7 @@ img.hover-shadow {
 
 }
 
-.sitemap h3 {
+.sitemap h4 {
     text-align: center;
     max-width: 150px;
     border-bottom: 1px solid white;
@@ -892,7 +892,27 @@ img.hover-shadow {
 }
 
 /*Media*/
+@media (max-width: 321px) {
+	
+	#posts {
+		padding-left: 44px;
+	}
+	#contact-title
+	{
+		font-size:32px;
+	}
+
+}
 @media (max-width: 376px) {
+	#calendar-box iframe
+	{
+		width: 200px;
+		height: 300px;
+	}
+	.social-btns-box
+	{
+		width: 101px;
+	}
     .action-btn-secondary {
         position: absolute;
         top: auto;
@@ -903,8 +923,31 @@ img.hover-shadow {
     .action-btn-secondary a {
         font-size: 12px !important;
     }
+	div.spons-imgs
+	{
+		margin-right: 30px!important;
+		margin-left: 90px!important;
+	}
+	div.purpose-info
+	{
+		font-size: 10px;
+	}
+	div.lang-changer img 
+	{
+		width: 24px;
+	}
+	.donation-contact-info
+	{	
+    	max-width: auto!important;
+    	min-width: auto!important;
+	}
 }
-
+@media (max-width: 482px)
+{
+	#posts {
+		padding-left: 131px!important;
+	}	
+}
 @media (max-width: 576px) {
 
     /*Header*/
@@ -980,6 +1023,10 @@ img.hover-shadow {
         margin-left: 30px !important;
         margin-right: 30px !important;
     }
+	.sitemap {
+        margin-left: 80px !important;
+        margin-right: auto !important;
+    }
 
 }
 
@@ -993,9 +1040,9 @@ img.hover-shadow {
         margin-top: auto;
     }
 
-    .some-work h1 {
-        margin-top: 30px;
-        font-size: 28px;
+    .some-work h2 {
+        margin-top: 40px;
+        font-size: 20px;
     }
 
     .action-btn-secondary a {
@@ -1010,7 +1057,7 @@ img.hover-shadow {
 @media (max-width: 788px) {
 
     /*header*/
-    #nav li button {
+    #nav li:last-of-type {
         margin-left: auto !important;
         margin-right: auto !important;
     }
@@ -1020,10 +1067,7 @@ img.hover-shadow {
         padding: 8px !important;
     }
 
-    .sitemap {
-        margin-left: 60px !important;
-        margin-right: auto !important;
-    }
+    
 
     .social-media {
 

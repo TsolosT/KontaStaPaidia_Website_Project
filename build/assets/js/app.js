@@ -1,6 +1,7 @@
 // JavaScript Document
-$(document).ready(function () 
+$(document).ready(function () 			  
 {
+	adjustCalendarSizeInXS();
 	//nav toggler 
     $("nav").find("li").on("click", "a", function () 
 		{
@@ -177,4 +178,3 @@ function donateType()
 		 $("input[name='cmd']").val("_xclick-subscriptions");
 	}
 }
-
