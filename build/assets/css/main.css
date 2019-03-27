@@ -436,6 +436,7 @@ select {
 #about-text-container > div {
     color: white;
     margin: 50px auto;
+    text-align:center;
 
 }
 
@@ -745,7 +746,6 @@ img.hover-shadow {
 .other-amount:focus,
 .other-amount:hover {
     border-color: #991f49;
-    ;
 }
 
 .amount-btn {
@@ -808,9 +808,17 @@ img.hover-shadow {
     padding-bottom: 5px;
     color: white;
     font-size: 16px;
-
+    
 }
-
+.social-btns-box
+{
+    margin-right: auto!important;
+}
+.social-media
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .sitemap ul li a:hover {
     color: #29abcc;
 }
@@ -824,7 +832,11 @@ img.hover-shadow {
     margin-bottom: -15px;
     margin-right: 5px;
 }
-
+/*modals*/
+  .modal-close-btn
+     {
+         margin-left: auto;
+     }
 #instagram-icon {
     display: inline-block;
     width: 41px;
@@ -1174,3 +1186,155 @@ img.hover-shadow {
         height: 38px !important;
     }
 }
+/*Media for IE*/
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ .social-media
+        {
+            margin-top: 64px;
+        }
+     .modal-close-btn
+     {
+         margin-left: 0;
+     }
+     .social-btns-box {
+    margin-right: 200px !important;
+    }
+    .freq-choice-ie{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .margin-y-ie
+     {
+         margin-top: 50px!important;
+     }
+    select::-ms-expand {
+    display: none;
+}  
+ }
+ @media screen and (min-width: 640px), screen\9 {
+ .social-media
+        {
+            margin-top: 64px;
+        }
+       .modal-close-btn
+     {
+         margin-left: 0;
+     }
+         .social-btns-box {
+        margin-right: 200px !important;
+
+    }
+    .freq-choice-ie{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .margin-y-ie
+     {
+         margin-top: 50px!important;
+     }
+     select::-ms-expand {
+    display: none;
+}  
+ }
+ @media screen\9 {
+     select::-ms-expand {
+    display: none;
+}  
+  .social-media
+        {
+            margin-top: 64px;
+        }
+       .modal-close-btn
+     {
+         margin-left: 0;
+     }
+     .social-btns-box {
+    margin-right: 200px !important;
+    }
+    .freq-choice-ie{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .margin-y-ie
+     {
+         margin-top: 50px!important;
+     }
+ }
+ @media \0screen {
+     select::-ms-expand {
+    display: none;
+}  
+  .social-media
+        {
+            margin-top: 64px;
+        }
+       .modal-close-btn
+     {
+         margin-left: 0;
+     }
+     .social-btns-box {
+    margin-right: 200px !important;
+    }
+    .freq-choice-ie{
+            width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+     .margin-y-ie
+     {
+         margin-top: 50px!important;
+     }
+ }
+ @media \0screen\,screen\9 {
+     select::-ms-expand {
+    display: none;
+}  
+  .social-media
+        {
+            margin-top: 64px;
+        }
+       .modal-close-btn
+     {
+         margin-left: 0;
+     }
+     .social-btns-box {
+    margin-right: 200px !important;
+    }
+    .freq-choice-ie{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .margin-y-ie
+     {
+        margin-top: 50px!important;
+     }
+ }
+ @media screen and (min-width:0\0){
+     select::-ms-expand {
+    display: none;
+}  
+  .social-media
+        {
+            margin-top: 64px;
+        }
+       .modal-close-btn
+     {
+         margin-left: 0;
+     }
+     .social-btns-box {
+    margin-right: 200px !important;
+    }
+    .freq-choice-ie{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .margin-y-ie
+     {
+        margin-top: 50px!important;
+     }
+ }

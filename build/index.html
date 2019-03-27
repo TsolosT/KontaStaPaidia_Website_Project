@@ -78,7 +78,7 @@
 							  <source media="(min-width:1300px)" srcset="assets/images/slider_3.jpg">
 							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_3.jpg">
 							  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_3.jpg">
-							  <img src="assets/images/slider_3.jpg" alt="First slide" style="width:auto;">
+							  <img id="slideImgFirst" src="assets/images/slider_3.jpg" alt="First slide" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-1">
 								<h2 id="action-btn-1" data-tag="sliderTextFirst">Help a child by making a donation</h2>
@@ -90,7 +90,7 @@
 							  <source media="(min-width:1300px)" srcset="assets/images/slider_2.jpg">
 							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_2.jpg">
 							  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_2.jpg">
-							  <img src="assets/images/slider_2.jpg" alt="Second slide" style="width:auto;">
+							  <img id="slideImgSecond" src="assets/images/slider_2.jpg" alt="Second slide" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-2 d-flex flex-column justify-content-end align-content-end" >
 									<a id="slide-2-btn" class="btn action-btn-secondary" href="contact.html" data-tag="sliderBtnSecont">Became a volunteer</a>
@@ -101,7 +101,7 @@
 							  <source media="(min-width:1300px)" srcset="assets/images/slider_1.jpg">
 							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_1.jpg">
 							  <source media="(max-width: 700px)" srcset="assets/images/slider_mobile_1.jpg">
-							  <img src="assets/images/slider_1.jpg" alt="Third slide" style="width:auto;">
+							  <img id="slideImgThird" src="assets/images/slider_1.jpg" alt="Third slide" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-3">
 									<h2 data-tag="sliderTextThird">ChildHood Cancer</h2>
@@ -198,7 +198,7 @@
 					  	<span class="shareRoundIcons">
 						 </span>
 					  </span>
-					<button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary modal-close-btn" data-dismiss="modal">Close</button>
 				  </div>
 				</div>
 			  </div>
@@ -223,7 +223,7 @@
 					  	<span class="shareRoundIcons">
 						 </span>
 					  </span>
-					<button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary modal-close-btn" data-dismiss="modal">Close</button>
 				  </div>
 				</div>
 			  </div>
@@ -322,7 +322,7 @@
 						
 						</ul>
 					</div>
-					<div class="col-md-3 col-sm-8  my-auto social-media">
+					<div class="col-md-3 col-sm-8 social-media">
 							<h5 data-tag="footerFindUs">Find us on</h5>					
 						 <span>
 							 <a href="https://www.facebook.com/" target="_blank" id="facebook-icon"></a>

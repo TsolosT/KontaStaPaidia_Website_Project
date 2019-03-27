@@ -11,6 +11,10 @@ $(document).ready(function ()
 		{
 			goTop(); 
 		});
+    //change img slider for ie & because isnt changing automatic
+    setInterval(function(){ changeCarouselImgBasedScreen(); }, 2000);
+   
+    
 	//post-carousel
 		$('#carousel-post').carousel({interval: 4000})
 		$('.card .carousel-item').each(function(){
@@ -176,4 +180,39 @@ function donateType()
 	{
 		 $("input[name='cmd']").val("_xclick-subscriptions");
 	}
+}
+
+//change img src for carousel for ie
+function changeCarouselImgBasedScreen()
+{
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    var screenWidth= window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+    var slideImgFirst = document.getElementById("slideImgFirst");
+    var slideImgSecond = document.getElementById("slideImgSecond");
+    var slideImgThird = document.getElementById("slideImgThird");
+    
+    if(isIE)
+    {
+      if(screenWidth>=1300)
+          {
+              slideImgFirst.src="assets/images/slider_3.jpg";
+              slideImgSecond.src="assets/images/slider_2.jpg";
+              slideImgThird.src="assets/images/slider_1.jpg";
+          }
+     else if(screenWidth>=701&&screenWidth<1300)
+          {
+            slideImgFirst.src="assets/images/slider_medium_3.jpg";
+              slideImgSecond.src="assets/images/slider_medium_2.jpg";
+              slideImgThird.src="assets/images/slider_medium_1.jpg";
+          }
+    else if(screenWidth<=700)
+          {
+             slideImgFirst.src="assets/images/slider_mobile_3.jpg";
+              slideImgSecond.src="assets/images/slider_mobile_2.jpg";
+              slideImgThird.src="assets/images/slider_mobile_1.jpg"
+          }
+    }
 }
