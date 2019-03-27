@@ -15,11 +15,11 @@
        </ul>
        <h5>Extra vendors i used</h5>
        <ul>
-            <li>For Mail plugin:<a href="https://www.npmjs.com/package/html-form-send-email-via-google-script-without-server">Send mail via google script</li>
-     <li>For Calendar plugin:Google Calendar</li>
-     <li>For Maps plugin:Google Maps</li>
-     <li>For Donation:<a href="https://developer.paypal.com/">PayPal </a> </li>
-     <li>For Social-media Share:<a href="http://js-socials.com/docs/">js-social </a> </li>   
+            <li>For Mail plugin: <a href="https://www.npmjs.com/package/html-form-send-email-via-google-script-without-server">Send mail via google script</a></li>
+     <li>For Calendar plugin: Google Calendar</li>
+     <li>For Maps plugin: Google Maps</li>
+     <li>For Donation: <a href="https://developer.paypal.com/">PayPal</a></li>
+     <li>For Social-media Share: <a href="http://js-socials.com/docs/">js-social</a> </li>   
       </ul>
        
-  <small>No backend needed that why i  used this plugins</small>
+  <small>No backend needed,so i used this plugins</small>
