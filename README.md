@@ -13,7 +13,7 @@
        <ul> 
               Stack that i used:
               <li>HTML</li>
-              <li>JS,Jquery</li>
+              <li>JS,Jquery,Ajax</li>
               <li>Bootstrap 4</li>
        </ul>
        <h5>Extra vendors i used</h5>
