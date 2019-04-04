@@ -1,6 +1,6 @@
 <h2># KontaStaPaidia_Website_Project</h2>
 <br>
-<h3>An Charity Website Project  for educational purpose.</h3>
+<h3>A Charity Website Project  for educational purpose.</h3>
 <small>4 Week Project</small>
 <br>
 <br>
