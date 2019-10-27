@@ -7,7 +7,6 @@ html,
 body {
     width: 100%;
 }
-
 a,
 h1,
 h2,
@@ -62,7 +61,7 @@ input {
 
 .container-fluid {
     padding: 0;
-    margin-top: 100px;
+    margin-top: 95px;
 }
 
 .carousel img {
@@ -130,8 +129,15 @@ input {
         width: 15px !important;
         height: 15px !important;
     }
+    .container-fluid {
+        margin-top: 76px;
+    }
 }
-
+@media (max-width: 769px) {
+    .container-fluid {
+        margin-top: 76px;
+    }
+}
 @media (min-width: 1200px) {
 
     /* show 3 items */
@@ -144,7 +150,9 @@ input {
 }
 
 @media (min-width: 768px) {
-
+    .container-fluid {
+        margin-top: 86px;
+    }
     /* show 3 items */
     div.card.carousel-item.active,
     div.card.carousel-item.active + div.card.carousel-item {
@@ -178,10 +186,11 @@ input {
 
 #top-first-line {
     width: 100%;
-    max-height: 40px;
+    max-height: 21px;
 }
 
 select {
+    font-size: 14px;;
     outline: 0;
     box-shadow: none;
     border: 0 !important;
@@ -191,9 +200,9 @@ select {
     -o-appearance: none;
     -ms-appearance: none;
     background: url(../images/icons/arrow-down_s.png) no-repeat 100%;
+    background-size:21px;
     padding-right: 30px;
 }
-
 #langselector {
     color: white;
     border: none;
@@ -204,11 +213,12 @@ select {
 }
 
 .lang-changer img {
-    width: 40px;
+    width: 32px;
 }
 
 .purpose-info {
     color: #FFEB00;
+    font-size: 14px;
 }
 
 #top-second-line {
@@ -216,8 +226,8 @@ select {
 }
 
 #logo {
-    width: 115px;
-    height: 65px;
+    width: 108px;
+    height: 56px;
 }
 
 #nav li {
@@ -225,7 +235,7 @@ select {
 }
 
 #nav li a {
-    font-size: 22px;
+    font-size: 16px;
     color: white;
 }
 
@@ -246,7 +256,6 @@ select {
 #carouselFull {
     width: 100%;
     height: 650px;
-    margin-top: 115px;
 }
 
 #carouselFull > img {
@@ -875,12 +884,8 @@ img.hover-shadow {
     .action-btn-secondary {
         position: absolute;
         top: auto;
-        left: 30px;
-        width: 120px !important;
-    }
-
-    .action-btn-secondary a {
-        font-size: 12px !important;
+        width: 100px !important;
+        font-size: 13px !important;
     }
 }
 
@@ -911,7 +916,10 @@ img.hover-shadow {
     .action-btn-primary a {
         font-size: 10px;
     }
-
+    .action-btn-secondary {
+        width: 100px !important;
+        font-size: 13px !important;
+    }
     .action-slide-1 {
         width: 160px !important;
     }
@@ -965,9 +973,12 @@ img.hover-shadow {
 @media (max-width: 680px) {
     .action-btn-secondary {
         width: 160px;
+        
         padding: 5px !important;
     }
-
+    .action-slide-2{
+        padding-left: 150px!important;
+    }
     .some-work {
         margin-top: auto;
     }
@@ -997,8 +1008,8 @@ img.hover-shadow {
     /*hero*/
     .action-btn-secondary {
         padding: 8px !important;
+        
     }
-
     .sitemap {
         margin-left: 60px !important;
         margin-right: auto !important;
@@ -1041,7 +1052,9 @@ img.hover-shadow {
     .action-slide-1 h2 {
         font-size: 18px;
     }
-
+    .action-slide-2{
+        padding-left: 120px!important;
+    }
     .event-see-more {
         margin: 210px 0 10px 120px !important;
     }

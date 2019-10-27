@@ -18,8 +18,8 @@
 	<!-- First line -->	
 	<div id="top-first-line" class="d-flex flex-row align-items-center justify-content-around ">
 		<div class="purpose-info p-0 ml-sm-5 ml-xs-1" data-tag="educationalPurpose">Created for educational purposes</div>
-	 	<div class="lang-changer pr-xs-0  mr-xs-0 mr-sm-5">
-			<img src="assets/images/icons/Globe-128.png" alt="Translation">
+	 	<div class="lang-changer pr-xs-0  mr-xs-0 mr-s`m-5">
+			<img id="langselector-img" src="assets/images/icons/Globe-128.png" alt="Translation">
 			<select id="langselector" class="my-1">
 			  <option value="en">English</option>
 			  <option value="gr">Greek</option>
@@ -29,7 +29,8 @@
 		<!-- Second line -->
 	<div id="top-second-line" class="row">
 		 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4  d-flex flex-row justify-content-around align-items-center">
-				<div class="ml-xl-5 ml-md-2 ml-xs-0 mb-md-3 mb-sm-2 ">
+				<!-- <div class="ml-xl-5 ml-md-2 ml-xs-0 mb-md-3 mb-sm-2 "> -->
+					<div>
 						<a class="navbar-brand ml-5"   href="index.html">
 							<img id="logo" src="assets/images/logo_desktop_1.png" alt="Κοντά στα παιδιά">
 						</a>
@@ -73,7 +74,7 @@
 				   </ol>
 					<!-- Items -->
 				   <div class="carousel-inner">
-					   <div class="carousel-item active">
+					   <div class="carousel-item ">
 						   <picture  class="d-block img-fluid">
 							  <source media="(min-width:1300px)" srcset="assets/images/slider_3.jpg">
 							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_3.jpg">
@@ -85,7 +86,7 @@
 								<a href="donate.html" class="btn action-btn-primary" data-tag="sliderBtnFirst">Make Now</a>
 						   </div>
 					   </div>
-					   <div class="carousel-item  ">
+					   <div class="carousel-item  active">
 						   <picture  class="d-block img-fluid">
 							  <source media="(min-width:1300px)" srcset="assets/images/slider_2.jpg">
 							   <source media="(min-width:701px)" srcset="assets/images/slider_medium_2.jpg">
@@ -93,7 +94,7 @@
 							  <img id="slideImgSecond" src="assets/images/slider_2.jpg" alt="Join our organization" style="width:auto;">
 							</picture>
 						   <div class="carousel-caption d-md-block action-slide-2 d-flex flex-column justify-content-end align-content-end" >
-									<a id="slide-2-btn" class="btn action-btn-secondary" href="contact.html" data-tag="sliderBtnSecont">Became a volunteer</a>
+									<a id="slide-2-btn" class="btn btn-info" href="contact.html" data-tag="sliderBtnSecont">Became a volunteer</a>
 						   </div>
 					   </div>
 					   <div class="carousel-item  ">
