@@ -519,9 +519,10 @@ select {
 }
 
 .spons-imgs img {
-    width: 200px;
+    width: 108px;
     margin-right: 40px;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 28px;
 }
 
 /*about-section*/
@@ -1112,3 +1113,12 @@ img.hover-shadow {
         height: 38px !important;
     }
 }
+/* Latest quick fixies */
+.text--warning{color:#ffeb00;}
+.gallery-section img:hover{cursor: pointer;}
+.social-media{padding-top:58px;}
+button#go-top-btn img{
+    width: 44px;
+    height: 44px;
+}
+#top-first-line{padding-top:10px;}
